@@ -2,7 +2,7 @@
 
 This mod makes (almost) every clan in every faction become their own kingdom and go to war with each other.
 
-Help is always welcome, check out the known issues and make a pull request. 
+Help is always welcome, check out the known issues and make a pull request or report an issue. 
 
 Thanks to calsev for his template mod that got me started. https://github.com/calsev/bannerlord_smith_forever. 
 
