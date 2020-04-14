@@ -1,0 +1,1044 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Factions>
+  <!--player faction-->
+  <Faction id="player_faction"
+           owner="Hero.main_hero"
+           banner_key="11.154.116.1536.1536.768.768.1.0.0.133.15.155.483.483.773.729.0.0.0"
+           is_minor_faction="true"
+           label_color="FFD2C0AA"
+           color="FF8D5C44"
+           color2="FFE9A74D"
+           alternative_color="FF6C5749"
+           alternative_color2="FFB3A491"
+           culture="Culture.battania"
+           settlement_banner_mesh="encounter_flag_a"
+           name="{=o0Xm5Rqk}Playerland"
+           tier="0"></Faction>
+  <Faction id="neutral"
+           owner="Hero.neutral_lord_1"
+           banner_key="11.154.154.1536.1536.768.768.1.0.0.515.155.155.100.100.773.729.0.0.0"
+           label_color="FFCCC3AB"
+           color="FFCCC3AB"
+           color2="FFCCC3AB"
+           alternative_color="FFCCC3AB"
+           alternative_color2="FFCCC3AB"
+           culture="Culture.neutral_culture"
+           settlement_banner_mesh="encounter_flag_a"
+           name="{=3PzgpFGq}Neutral"
+           tier="1"></Faction>
+  <!--bandit factions-->
+  <Faction id="looters"
+           owner="Hero.lord_looters_1"
+           banner_key="24.95.116.1536.1536.768.768.1.0.0"
+           label_color="FF8B7C73"
+           color="FF8B7C73"
+           color2="FF8B7C73"
+           alternative_color="FF8B7C73"
+           alternative_color2="FF8B7C73"
+           culture="Culture.looters"
+           default_party_template="PartyTemplate.looters_template"
+           settlement_banner_mesh="none"
+           is_bandit="true"
+           is_outlaw="true"
+           name="{=1sbJQR4H}Looters"
+           tier="1"></Faction>
+  <!--Faction id="deserters" owner="Hero.lord_deserters_1" label_color="FF8B7C73" color="FF8B7C73" color2="FF8B7C73" alternative_color="FF8B7C73" alternative_color2="FF8B7C73" culture="Culture.deserters" default_party_template="PartyTemplate.deserters_template" settlement_banner_mesh="none" is_bandit="true" is_outlaw="true" name="Deserters">
+  </Faction-->
+  <Faction id="sea_raiders"
+           owner="Hero.lord_sea_raiders_1"
+           banner_key="20.12.116.1536.1536.768.768.1.0.0"
+           label_color="FF8B7C73"
+           color="FF8B7C73"
+           color2="FF8B7C73"
+           alternative_color="FF8B7C73"
+           alternative_color2="FF8B7C73"
+           culture="Culture.sea_raiders"
+           default_party_template="PartyTemplate.sea_raiders_template"
+           settlement_banner_mesh="none"
+           is_bandit="true"
+           is_outlaw="true"
+           name="{=pBUc2pL8}Sea Raiders"
+           tier="1"></Faction>
+  <Faction id="mountain_bandits"
+           owner="Hero.lord_mountain_bandits_1"
+           banner_key="20.101.116.1536.1536.768.768.1.0.0"
+           label_color="FF8B7C73"
+           color="FF8B7C73"
+           color2="FF8B7C73"
+           alternative_color="FF8B7C73"
+           alternative_color2="FF8B7C73"
+           culture="Culture.mountain_bandits"
+           default_party_template="PartyTemplate.mountain_bandits_template"
+           settlement_banner_mesh="none"
+           is_bandit="true"
+           is_outlaw="true"
+           name="{=mOa9CX13}Mountain Bandits"
+           tier="1"></Faction>
+  <Faction id="forest_bandits"
+           owner="Hero.lord_forest_bandits_1"
+           banner_key="20.2.116.1536.1536.768.768.1.0.0"
+           label_color="FF8B7C73"
+           color="FF8B7C73"
+           color2="FF8B7C73"
+           alternative_color="FF8B7C73"
+           alternative_color2="FF8B7C73"
+           culture="Culture.forest_bandits"
+           default_party_template="PartyTemplate.forest_bandits_template"
+           settlement_banner_mesh="none"
+           is_bandit="true"
+           is_outlaw="true"
+           name="{=sAbjtZbB}Forest Bandits"
+           tier="1"></Faction>
+  <Faction id="desert_bandits"
+           owner="Hero.lord_desert_bandits_1"
+           banner_key="20.7.116.1536.1536.768.768.1.0.0"
+           label_color="FF8B7C73"
+           color="FF8B7C73"
+           color2="FF8B7C73"
+           alternative_color="FF8B7C73"
+           alternative_color2="FF8B7C73"
+           culture="Culture.desert_bandits"
+           default_party_template="PartyTemplate.desert_bandits_template"
+           settlement_banner_mesh="none"
+           is_bandit="true"
+           is_outlaw="true"
+           name="{=kkUQObZn}Desert Bandits"
+           tier="1"></Faction>
+  <Faction id="steppe_bandits"
+           owner="Hero.lord_steppe_bandits_1"
+           banner_key="20.18.116.1536.1536.768.768.1.0.0"
+           label_color="FF8B7C73"
+           color="FF8B7C73"
+           color2="FF8B7C73"
+           alternative_color="FF8B7C73"
+           alternative_color2="FF8B7C73"
+           culture="Culture.steppe_bandits"
+           default_party_template="PartyTemplate.steppe_bandits_template"
+           settlement_banner_mesh="none"
+           is_bandit="true"
+           is_outlaw="true"
+           name="{=e6csp4ha}Steppe Bandits"
+           tier="1"></Faction>
+  <!-- mercenary minor factions (4) -->
+  <Faction id="ghilman"
+           initial_posX="360.0"
+           initial_posY="212.0"
+           banner_key="11.154.154.1536.1536.768.768.1.0.0.222.155.155.442.442.773.729.0.0.0"
+           label_color="FF8B3D3D"
+           color="FF8B3D3D"
+           color2="FF8B3D3D"
+           alternative_color="FF8B3D3D"
+           alternative_color2="FF8B3D3D"
+           culture="Culture.darshi"
+           default_party_template="PartyTemplate.kingdom_hero_party_mercenary_aserai_template"
+           settlement_banner_mesh="encounter_flag_f"
+           is_minor_faction="true"
+           is_clan_type_mercenary="true"
+           name="{=H5iWxbbl}Ghilman"
+           tier="4"
+           text="{=4TiYXBqK}The Ghilman are a band of mercenaries who recruit from the tribes of southern Calradia and the lands to the east. They are legally their own slaves and masters: each “sells“ himself to the order and, in the process, becomes a part-owner. They are known for their fine horses and fine clothes. But no one should assume from their oiled locks, perfumes and peacock feathers that they spend more time preening then training. Their skills as mounted archers are second to none, and as lancers are close behind the Vlandians and the imperial cataphracts."></Faction>
+  <!-- short name - legion -->
+  <Faction id="legion_of_the_betrayed"
+           initial_posX="472.0"
+           initial_posY="372.0"
+           banner_key="11.147.147.1536.1536.768.768.1.0.0.215.155.155.442.442.773.729.0.0.0"
+           label_color="FF7B5869"
+           color="FF7B5869"
+           color2="FF7B5869"
+           alternative_color="FF7B5869"
+           alternative_color2="FF7B5869"
+           culture="Culture.empire"
+           default_party_template="PartyTemplate.kingdom_hero_party_mercenary_empire_template"
+           settlement_banner_mesh="encounter_flag_f"
+           is_minor_faction="true"
+           is_clan_type_mercenary="true"
+           name="{=LqTTchsa}Legion of the Betrayed"
+           short_name="{=Ssl38GEF}Legion"
+           tier="4"
+           text="{=bhxVA9w7}The Last Legion was created after the Emperor Arenicos enacted his reforms after the disaster of the battle of Pendraic, abolishing the last of the Empire’s standing armies in favor of archon’s private retinues that were significantly cheaper and better at controlling territory. The Legion is made up of men who detested this change: they loved the old army, its standards and its unit histories and its camp life, and they blame the new system for destroying the empire. But an army does not hold together unless it is paid regularly, and they take contracts from imperial and foreign lords alike."></Faction>
+  <!-- short name - skolderbrotva -->
+  <Faction id="skolderbrotva"
+           initial_posX="530.0"
+           initial_posY="595.0"
+           banner_key="11.146.146.1536.1536.768.768.1.0.0.111.150.155.483.483.773.729.0.0.0"
+           label_color="FF66CCFF"
+           color="FF66CCFF"
+           color2="FF66CCFF"
+           alternative_color="FF66CCFF"
+           alternative_color2="FF66CCFF"
+           culture="Culture.nord"
+           default_party_template="PartyTemplate.kingdom_hero_party_mercenary_sturgia_template"
+           settlement_banner_mesh="encounter_flag_f"
+           is_minor_faction="true"
+           is_clan_type_mercenary="true"
+           name="{=7k9izAvC}Skolderbrotva"
+           tier="4"
+           text="{=bsPd5zri}The Skolderbroda, or Shield Brothers, are a mercenary company for those who take fighting and training very seriously. They are primarily Nordic but do allow recruits from other cultures, as long as an already-serving Shield Brother will vouch for them. Their rules are almost monastic:no women in their encampments and no amusements, and no Brother is allowed to spend the night outside without permission. In combat they fight with spear and axe in the Nordic style, and are valued by all the noble houses of the north."></Faction>
+  <!-- short name - company -->
+  <Faction id="company_of_the_boar"
+           initial_posX="167.0"
+           initial_posY="553.0"
+           banner_key="11.148.148.1536.1536.768.768.1.0.0.151.0.155.542.542.773.729.0.0.0"
+           label_color="FFAA415D"
+           color="FFAA415D"
+           color2="FFAA415D"
+           alternative_color="FFAA415D"
+           alternative_color2="FFAA415D"
+           culture="Culture.vlandia"
+           default_party_template="PartyTemplate.kingdom_hero_party_mercenary_vlandia_template"
+           settlement_banner_mesh="encounter_flag_f"
+           is_minor_faction="true"
+           is_clan_type_mercenary="true"
+           name="{=UmVjzPI4}Company of the Golden Boar"
+           short_name="{=GCy0xb6U}Company"
+           tier="4"
+           text="{=tae3lhXh}The Company are Vlandians, mostly local levies who don’t adjust well to peacetime and opted for a life of constant warfare. They are probably the least disciplined and most brigandish of Calradia's mercenaries, and a scourge to any bit of countryside where they are allowed to run loose. Still, like all mercenaries, they know that their future earnings depend on their reputation, so they honor their contracts and practice their skills, particularly with the crossbow, to ensure their employers receive their money’s worth."></Faction>
+  <!-- mafia minor factions (8) -->
+  <Faction id="beni_zilal"
+           initial_posX="445.0"
+           initial_posY="55.0"
+           banner_key="14.0.97.1536.1536.768.768.1.0.0.309.41.0.321.321.763.741.0.0.47"
+           label_color="FFB38841"
+           color="FFB38841"
+           color2="FFB38841"
+           alternative_color="FFB38841"
+           alternative_color2="FFB38841"
+           culture="Culture.aserai"
+           default_party_template="PartyTemplate.kingdom_hero_party_outlaw_aserai_template"
+           settlement_banner_mesh="encounter_flag_f"
+           is_minor_faction="true"
+           is_outlaw="true"
+           is_mafia="true"
+           name="{=NObV048p}Beni Zilal"
+           tier="4"></Faction>
+  <Faction id="wolfskins"
+           initial_posX="261.0"
+           initial_posY="509.0"
+           banner_key="14.2.95.1536.1536.768.768.1.0.0.148.41.0.385.385.761.783.0.0.0"
+           label_color="FF848B65"
+           color="FF848B65"
+           color2="FF848B65"
+           alternative_color="FF848B65"
+           alternative_color2="FF848B65"
+           culture="Culture.battania"
+           default_party_template="PartyTemplate.kingdom_hero_party_outlaw_battania_template"
+           settlement_banner_mesh="encounter_flag_f"
+           is_minor_faction="true"
+           is_outlaw="true"
+           is_mafia="true"
+           name="{=nh4Y3LOc}Wolfskins"
+           tier="4"
+           text="{=7bhNgOKd}The Wolfskins are heirs to a long tradition in the Battanian lands wherein great warriors went “wilding” for part of their youth, learning the ways of the woods and how to suffer hardship. So long as a Wolfskin wears no sewn clothes, eats no cooked food, and sleeps under no roof, he is immune from the laws of men. In fact, the modern Wolfskins tend to be the sons of wealthy families taking a few years to indulge their feral side, robbing travellers and living viciously and not necessarily hewing to the old code."></Faction>
+  <Faction id="brotherhood_of_woods"
+           initial_posX="170.0"
+           initial_posY="414.0"
+           banner_key="14.14.39.1536.1536.768.768.1.0.0.302.41.0.440.440.781.758.0.0.0"
+           label_color="FF996666"
+           color="FF996666"
+           color2="FF996666"
+           alternative_color="FF996666"
+           alternative_color2="FF996666"
+           culture="Culture.vlandia"
+           default_party_template="PartyTemplate.kingdom_hero_party_outlaw_vlandia_template"
+           settlement_banner_mesh="encounter_flag_f"
+           is_minor_faction="true"
+           is_outlaw="true"
+           is_mafia="true"
+           name="{=as2TiAIJ}Brotherhood of the Woods"
+           short_name="{=khnadIv1}Brotherhood"
+           tier="4"
+           text="{=xahrUc5n}The Brotherhood of the Woods started as a Vlandian peasant movement, hiding out in the forests, robbing from the rich and giving to the poor. However, it encountered the problems that any long-running rebel movement might – it needed to ensure a steady supply of food, and also ensure that none of the poor would dare earn a bag of coins by informing on them. Slowly but surely, it began to make use of extortion, terror, and corrupt deals with the local authorities to survive, becoming little different from any other organized bandit group in Calradia."></Faction>
+  <!-- There was no member of this faction, encyclopedia was crashing-->
+  <!--<Faction id="guardians" initial_posX="294.0" initial_posY="378.0" label_color="FFFFFFCC" color="FFFFFFCC" color2="FFFFFFCC" alternative_color="FFFFFFCC" alternative_color2="FFFFFFCC" culture="Culture.empire" default_party_template="PartyTemplate.kingdom_hero_party_outlaw_empire_s_template" settlement_banner_mesh="encounter_flag_f" is_minor_faction="true" is_outlaw="true" is_mafia="true" name="Guardians of the Hills" short_name="{=*}Guardians" text="{=*}The Watchers are frontiersmen in the northwest of the Empire. They are used to working with the local nobility, specializing in scouting and tracking. But as the Empire descended into civil war, they have begun asserting power in the areas in which they live, becoming a law unto themselves and taking what they want from surrounding villages. They still will cooperate with imperial marcher noble families, but on their terms, not the Empire's."> 
+      </Faction>-->
+  <Faction id="hidden_hand"
+           initial_posX="486.0"
+           initial_posY="333.0"
+           banner_key="14.67.39.1536.1536.768.768.1.0.0.342.41.0.352.352.778.746.0.0.0"
+           label_color="FF66CCFF"
+           color="FF66CCFF"
+           color2="FF66CCFF"
+           alternative_color="FF66CCFF"
+           alternative_color2="FF66CCFF"
+           culture="Culture.empire"
+           default_party_template="PartyTemplate.kingdom_hero_party_outlaw_empire_w_template"
+           settlement_banner_mesh="encounter_flag_f"
+           is_minor_faction="true"
+           is_outlaw="true"
+           is_mafia="true"
+           name="{=MVHawAEp}Hidden Hand"
+           short_name="{=j3KtHQzn}Hand"
+           tier="3"
+           text="{=nQOf27Rx}The Hidden Hand are a mafia who dominate the rural areas, and sometimes the towns, of the southern parts of the Empire. They thrive by making themselves useful to authorities: repressing unrest, silencing troublesome preachers, and robbing from merchants who compete with their patrons. Many of them go back and forth between a respectable life in the towns and a criminal life in countryside, spending two or three months a year as a brigand and enforcer and the rest as a ”trader” in stolen goods, knowing full well that no one will bother them."></Faction>
+  <Faction id="lakepike"
+           initial_posX="628.0"
+           initial_posY="328.0"
+           banner_key="14.12.105.1536.1536.768.768.1.0.0.307.41.0.431.431.768.757.0.0.359"
+           label_color="FF7CAFC7"
+           color="FF7CAFC7"
+           color2="FF7CAFC7"
+           alternative_color="FF7CAFC7"
+           alternative_color2="FF7CAFC7"
+           culture="Culture.sturgia"
+           default_party_template="PartyTemplate.kingdom_hero_party_outlaw_sturgia_template"
+           settlement_banner_mesh="encounter_flag_f"
+           is_minor_faction="true"
+           is_outlaw="true"
+           is_mafia="true"
+           name="{=7WL1LWdf}Lake Rats"
+           short_name="{=7WL1LWdf}Lake Rats"
+           tier="4"
+           text="{=9ZEdEWmi}The Lake Rats live in the marshes on the shores of the great northern lake, in shacks made out of the timbers of ruined ships. They live by “wrecking“ - ie, luring ships onto shoals with false lighthouses and beacons. Because they're scorned by the rest of Calradia - ”all criminals, smell like marsh gas and mud and rotten fish” - they scorn everyone else back. Although mostly Sturgian, their ranks have been swelled by fugitives, debtors, and anyone else who’d rather live by a thieves’ code than by the laws of nobles."></Faction>
+  <!-- RELIGIOUS MINOR FACTIONS (2)-->
+  <!-- short name - chosen -->
+  <!--<Faction id="chosen_of_the_sky" initial_posX="629.0" initial_posY="515.0" label_color="FFFFFFCC" color="FFFFFFCC" color2="FFFFFFCC" alternative_color="FFFFFFCC" alternative_color2="FFFFFFCC" culture="Culture.khuzait" default_party_template="PartyTemplate.kingdom_hero_party_karakhuzaits_template" settlement_banner_mesh="encounter_flag_f" is_minor_faction="true" is_outlaw="true" is_sect="true" name="Chosen of the Sky" short_name="{=*}Chosen" >
+  </Faction>-->
+  <Faction id="embers_of_flame"
+           initial_posX="575.0"
+           initial_posY="446.0"
+           banner_key="35.6.7.1536.1536.768.768.1.0.0.212.34.0.483.483.764.748.0.0.0"
+           label_color="FFA86651"
+           color="FFA86651"
+           color2="FFA86651"
+           alternative_color="FFA86651"
+           alternative_color2="FFA86651"
+           culture="Culture.empire"
+           default_party_template="PartyTemplate.kingdom_hero_party_outlaw_empire_e_template"
+           settlement_banner_mesh="encounter_flag_f"
+           is_minor_faction="true"
+           is_outlaw="true"
+           is_sect="true"
+           name="{=mtZu1l2j}Embers of the Flame"
+           short_name="{=zcLTthfN}Embers"
+           tier="3"
+           text="{=B8c2mNKj}The Embers of the Flame are the descendants of a rebel movement that rose up nearly a century ago, after the saintly but ineffective teenaged Emperor Darusos was toppled by one of his generals. They claim that they are preparing the way for Heaven to bring back Darusos and usher in a golden age, but like so many other rebel movements in Calradia they have been forced to turn to extortion to survive."></Faction>
+  <!-- nomad minor factions (4) -->
+  <Faction id="jawwal"
+           initial_posX="692.0"
+           initial_posY="217.0"
+           banner_key="34.39.97.1536.1536.768.768.1.0.0.427.27.0.415.415.768.732.0.0.0"
+           label_color="FF9A593D"
+           color="FF9A593D"
+           color2="FF9A593D"
+           alternative_color="FF9A593D"
+           alternative_color2="FF9A593D"
+           culture="Culture.aserai"
+           default_party_template="PartyTemplate.kingdom_hero_party_jawwal_template"
+           settlement_banner_mesh="encounter_flag_f"
+           is_minor_faction="true"
+           is_outlaw="true"
+           is_nomad="true"
+           name="{=8ba4tpRU}Jawwal"
+           tier="4"
+           text="{=RWOYui01}The Jawwal, or “Roamers,” are the main bedouin confederacy in the Nahhas desert. They wander from highland to lowland grazing grounds, declaring huge swathes of the desert their “territory” in which any caravan must offer protection money. They compose poems of their deeds and mock other clans of the Banu Asera for having given up the “freedom” of black wool tents for stone houses in the oases. The other clans consider them boastful nuisances, though grudgingly respecting them as protectors of the old Aserai ways."></Faction>
+  <Faction id="karakhuzaits"
+           initial_posX="700.0"
+           initial_posY="515.0"
+           banner_key="34.10.25.1536.1536.768.768.1.0.0.314.35.0.390.390.770.762.0.0.269"
+           label_color="FF1F3A42"
+           color="FF1F3A42"
+           color2="FF1F3A42"
+           alternative_color="FF1F3A42"
+           alternative_color2="FF1F3A42"
+           culture="Culture.khuzait"
+           default_party_template="PartyTemplate.kingdom_hero_party_karakhuzaits_template"
+           settlement_banner_mesh="encounter_flag_f"
+           is_minor_faction="true"
+           is_outlaw="true"
+           is_nomad="true"
+           name="{=6BvGhzao}Karakhergit"
+           tier="4"
+           text="{=XJbDRBfd}The Karakhergit are a nomadic clan that has resisted all efforts by the centralizing Urkhunid khans to keep them in one place, give them farmlands and serfs, and force them to give over taxes and military levies. They are treated by the other clans with a combination of envy and contempt. They trade and sometimes even intermarry with their settled brethren, but they also do a limited amount of kidnapping for ransom and raiding of flocks, and scoff at those who would blame them for carrying on with the heroic old ways."></Faction>
+  <Faction id="forest_people"
+           initial_posX="195.0"
+           initial_posY="399.0"
+           banner_key="34.2.61.1536.1536.768.768.1.0.0.203.27.0.373.373.890.754.0.0.359.203.27.0.500.500.778.739.0.0.359.203.27.0.373.373.650.757.0.0.359"
+           label_color="FF668351"
+           color="FF668351"
+           color2="FF668351"
+           alternative_color="FF668351"
+           alternative_color2="FF668351"
+           culture="Culture.vakken"
+           default_party_template="PartyTemplate.kingdom_hero_party_forest_people_template"
+           settlement_banner_mesh="encounter_flag_f"
+           is_minor_faction="true"
+           is_outlaw="true"
+           is_nomad="true"
+           name="{=o7ud4X2X}Forest People"
+           tier="4"
+           text="{=0u8ipbgn}The tribes known as the Forest People practice slash-and-burn farming in the deep woods, outside the grasp of the Sturgian boyars. They burn down tracts of trees, grow crops on the virgin soil fertilized by ash for a few years until the land is exhausted, and move on. It is an inefficient use of land but a very efficient use of labor, suitable for a numerically small population in a large area. Also, because the plots are hard to measure and tax, it's a very good strategy for people who don't care to be governed."></Faction>
+  <Faction id="eleftheroi"
+           initial_posX="705.0"
+           initial_posY="590.0"
+           banner_key="34.8.38.1536.1536.768.768.1.0.0.323.27.0.500.500.755.745.0.0.0"
+           label_color="FFA26424"
+           color="FFA26424"
+           color2="FFA26424"
+           alternative_color="FFA26424"
+           alternative_color2="FFA26424"
+           culture="Culture.empire"
+           default_party_template="PartyTemplate.kingdom_hero_party_eleftheroi_template"
+           settlement_banner_mesh="encounter_flag_f"
+           is_minor_faction="true"
+           is_outlaw="true"
+           is_nomad="true"
+           name="{=eC6qIOzz}Eleftheroi"
+           tier="3"
+           text="{=9qAWNBvA}The Eleftheroi, the free people, live on the steppelands at the edge of the Empire. Originally the descendants of runaway slaves and debtors, they soon became highly valued by the local imperial commanders for their knowledge of this frontier zone. Their leaders have been granted titles, their young men taken into the retinues of archons and emperors. But though they are now very loyal to the idea of the Empire, they remain quite hostile to its actual authority."></Faction>
+  <!--
+  <Faction id="freemen" initial_posX="136.0" initial_posY="504.0" label_color="714833" color="714833" color2="FFFF66FF" alternative_color="FFFF66FF" alternative_color2="714833" culture="Culture.vlandia" default_party_template="PartyTemplate.kingdom_hero_party_eleftheroi_template" encounterbackgroundmesh="gui_bg_lord_empire" settlement_banner_mesh="encounter_flag_f" is_minor_faction="true" is_outlaw="true" is_nomad="true" name="Freemen of the Marshes">
+  </Faction>
+-->
+  <Faction id="test_clan"
+           name="{=GgMVWlkr}Test Clan"
+           owner="Hero.lord_1_7"
+           tier="1" />
+  <!-- Aristocratic starting kingdom -->
+  <Faction id="clan_empire_north_1"
+           name="{=fXENjJJL}Osticos"
+           tier="6"
+           owner="Hero.lord_1_1"
+           culture="Culture.empire"
+           super_faction="Kingdom.osticos"
+           banner_key="11.71.4.4922.4922.776.777.1.0.0.529.5.0.152.152.882.879.0.0.0.419.5.0.510.510.772.767.0.0.0.526.5.0.152.152.664.876.0.0.0.527.5.0.152.152.659.658.0.0.0.528.5.0.152.152.879.657.0.0.0" />
+  <!--
+	Aristocratic clan - head of west empire
+	Patriarch 1_1 - Clearcos
+	Lady - Very high sense of decorum
+	Heir 21 - Equally strong sense of entitlement
+	
+	"The Osticoi are one of the oldest families in the Empire, and the wealthiest. They have always resented it when the Emperor is chosen
+	from another dynasty.
+	-->
+  <Faction id="clan_empire_north_2"
+           name="{=UW8BjPXR}Argoros"
+           tier="5"
+           owner="Hero.lord_1_3"
+           culture="Culture.empire"
+           super_faction="Kingdom.argoros"
+           banner_key="11.71.4.4922.4922.776.777.1.0.0.142.5.0.502.502.754.693.0.0.1.142.5.0.502.502.772.869.0.0.179" />
+  <!--
+	Sympathetic: O
+	Philosophical clan? Views Osticos as most likely to restore republic
+	
+	Patriarch 1_3, stoic - Stenecos
+	Heir 22
+	Lieutenant - loyal
+	
+	Volorias
+
+	MINOR FACTION: POSITIVE ties to lost legion
+	
+	"The Argoroi hold to the ideals of the republic, and would probably like to see the Emperor made subject to the Senate.
+	They are known for long speeches in the Senate on honor and virtue.
+	Stenecos is a dour man, who expects much of himself and much of others. But they are known for being trustworthy,
+	and diligent in their execution of warfare against the Empire's enemies."	
+		-->
+  <Faction id="clan_empire_north_3"
+           name="{=txCNVmSV}Neretzes"
+           tier="5"
+           owner="Hero.lord_1_5"
+           culture="Culture.empire"
+           super_faction="Kingdom.empire_3"
+           banner_key="11.71.4.4345.4345.776.777.1.0.0.302.5.0.423.423.814.711.0.0.327.302.5.0.423.423.720.712.0.0.32.202.5.0.424.424.882.908.0.0.47.202.5.0.430.443.665.914.0.1.316.320.5.0.365.365.772.796.0.0.0" />
+  <!--
+	Unsympathetic: close-minded
+	Patriarch (1_5) is imperial blowhard
+	Heir 23 - is younger imperial blowhard
+	Lieutenant	
+	-->
+  <Faction id="clan_empire_north_4"
+           name="{=tA3IRBgv}Impestores"
+           tier="5"
+           owner="Hero.lord_1_20"
+           culture="Culture.empire"
+           super_faction="Kingdom.impestores"
+           banner_key="11.71.4.4345.4345.774.771.1.0.0.304.5.0.426.426.921.755.0.0.0.443.5.0.510.510.774.762.0.0.0.304.5.0.426.426.622.759.0.0.0" />
+  <Faction id="clan_empire_north_5"
+           name="{=4rr3d8hY}Dolentor"
+           tier="5"
+           owner="Hero.lord_1_50"
+           culture="Culture.empire"
+           super_faction="Kingdom.dolentor"
+           banner_key="11.71.4.8690.8690.590.796.1.0.0.202.5.0.400.400.868.877.0.0.55.202.5.0.402.423.669.874.0.1.303.331.5.0.400.400.765.716.0.0.0" />
+  <Faction id="clan_empire_north_6"
+           name="{=9ORFG9l4}Chonis"
+           tier="2"
+           owner="Hero.lord_1_51"
+           culture="Culture.empire"
+           super_faction="Kingdom.chonis"
+           banner_key="11.71.4.4345.4345.776.777.1.0.0.320.5.0.487.487.767.815.0.0.0.302.5.0.423.423.758.681.0.0.0" />
+  <Faction id="clan_empire_north_7"
+           name="{=CibaXzG8}Phalentes"
+           tier="1"
+           owner="Hero.lord_1_58"
+           culture="Culture.empire"
+           super_faction="Kingdom.phalentes"
+           banner_key="11.71.4.4345.4345.776.777.1.0.0.423.5.0.506.506.772.774.0.0.0.418.5.0.362.362.780.774.0.0.0" />
+  <!-- Populist starting kingdom - WEST-->
+  <Faction id="clan_empire_west_1"
+           name="{=OVQoC9fn}Comnos"
+           tier="6"
+           owner="Hero.lord_1_7"
+           culture="Culture.empire"
+           super_faction="Kingdom.comnos"
+           banner_key="11.71.4.4922.4922.776.777.1.0.0.202.5.0.389.353.849.863.0.0.41.202.5.0.397.397.699.861.0.1.319.323.5.0.442.442.758.728.0.0.0" />
+  <Faction id="clan_empire_west_2"
+           name="{=a4GxTbPD}Varros"
+           tier="5"
+           owner="Hero.lord_1_9"
+           culture="Culture.empire"
+           super_faction="Kingdom.varros"
+           banner_key="11.71.4.4922.4922.776.777.1.0.0.337.5.0.454.454.759.690.0.0.0.301.5.0.322.322.768.889.0.0.90.301.5.0.322.322.767.954.0.0.270" />
+  <!--
+	Fully unsympathetic clan - terrorizes their valley
+	Apokos, Father - debauched, based on Alexius Apokaukos, master schemer	
+	Heir 25 - charismatic psychopath
+	Heiress leads armies - equally charismatic psychopath	
+	MINOR FACTION: POSITIVE ties to Hidden Ones
+  -->
+  <Faction id="clan_empire_west_3"
+           name="{=tdGvElSy}Dionicos"
+           tier="5"
+           owner="Hero.lord_1_11"
+           culture="Culture.empire"
+           super_faction="Kingdom.dionicos"
+           banner_key="11.71.4.4922.4922.776.777.1.0.0.103.5.0.477.477.753.758.0.0.358" />
+  <!--
+	Sympathetic - Border guards - many sacrifices but much sense of entitlement
+	Ancestor was Asurai emir
+	Draw on Akritic ballads
+	-->
+  <Faction id="clan_empire_west_4"
+           name="{=xqkKtWqa}Elaches"
+           tier="5"
+           owner="Hero.lord_1_40"
+           culture="Culture.empire"
+           super_faction="Kingdom.elaches"
+           banner_key="11.71.4.4922.4922.776.777.1.0.0.201.5.0.393.393.904.775.0.0.180.201.5.0.508.508.778.768.0.0.0.201.5.0.393.393.617.781.0.0.180" />
+  <Faction id="clan_empire_west_5"
+           name="{=cd0yDTM1}Lonalion"
+           tier="5"
+           owner="Hero.lord_1_45"
+           culture="Culture.empire"
+           super_faction="Kingdom.lonalion"
+           banner_key="11.71.4.4922.4922.776.777.1.0.0.418.5.0.299.299.762.774.0.0.0.500.5.0.503.503.750.783.0.0.0.500.5.0.423.423.752.783.0.0.0" />
+  <Faction id="clan_empire_west_6"
+           name="{=ApJrV7bA}Sorados"
+           tier="2"
+           owner="Hero.lord_1_52"
+           culture="Culture.empire"
+           super_faction="Kingdom.sorados"
+           banner_key="11.71.4.4922.4922.776.777.1.0.0.336.5.0.486.486.761.813.0.0.0.340.5.0.279.279.763.566.0.0.0" />
+  <Faction id="clan_empire_west_7"
+           name="{=bjemmmcF}Corenios"
+           tier="2"
+           owner="Hero.lord_1_53"
+           culture="Culture.empire"
+           super_faction="Kingdom.corenios"
+           banner_key="11.71.4.4922.4922.776.777.1.0.0.423.5.0.486.486.762.760.0.0.1.340.5.0.393.393.765.739.0.0.0" />
+  <Faction id="clan_empire_west_8"
+           name="{=pdz4YsEf}Maneolis"
+           tier="1"
+           owner="Hero.lord_1_71"
+           culture="Culture.empire"
+           super_faction="Kingdom.maneolis"
+           banner_key="11.71.4.4922.4922.776.777.1.0.0.419.5.0.503.503.770.775.0.0.0.335.5.0.143.143.878.652.0.0.325.335.5.0.143.143.654.657.0.0.42.335.5.0.143.143.656.892.0.0.134.335.5.0.143.143.875.892.0.0.214" />
+  <!-- Cosmopolitan starting kingdom -->
+  <Faction id="clan_empire_south_1"
+           name="{=hrWQWgaM}Pethros"
+           tier="6"
+           owner="Hero.lord_1_14"
+           culture="Culture.empire"
+           super_faction="Kingdom.pethros"
+           banner_key="11.71.4.4922.4922.776.777.1.0.0.200.5.0.353.353.650.862.0.0.0.200.5.0.368.353.886.863.0.1.0.326.5.0.345.331.763.697.0.1.0" />
+  <!--
+	Head of clan - Queen, niece of the emperor, raised abroad, blood of the Padishah as well
+	Queen's consort - of imperial birth, charismatic but vindictive,
+	Queen's lieutenant - 
+	Queen's younger brother and sister - goodnatured
+	-->
+  <Faction id="clan_empire_south_2"
+           name="{=UQHUu2bj}Leonipardes"
+           tier="5"
+           owner="Hero.lord_1_15"
+           culture="Culture.empire"
+           super_faction="Kingdom.leonipardes"
+           banner_key="11.71.4.4922.4922.776.777.1.0.0.214.5.0.463.463.758.758.0.0.0" />
+  <!--	
+	Mixed - Plutocratic
+	Patriarch #15 - Old-school aristocrat, doing something he finds distasteful to maintain his family's position
+	Cunning, pragmatist heir
+		"The empire is beset on all sides, it defeat its foes, it must absorb them."
+	-->
+  <Faction id="clan_empire_south_3"
+           name="{=h7ujXmDx}Mestricaros"
+           tier="5"
+           owner="Hero.lord_1_17"
+           culture="Culture.empire"
+           super_faction="Kingdom.mestricaros"
+           banner_key="11.71.4.4922.4922.776.777.1.0.0.108.5.0.485.485.760.650.0.0.0.325.5.0.501.501.756.818.0.0.0" />
+  <!--
+	Patriarch - #17 Long list of grievances against other large families, sided with Pathros by default
+	Uncle - Cunning, frustrated
+	-->
+  <Faction id="clan_empire_south_4"
+           name="{=4Dbwdjbe}Hongeros"
+           tier="3"
+           owner="Hero.lord_1_30"
+           culture="Culture.empire"
+           super_faction="Kingdom.hongeros"
+           banner_key="11.71.4.4922.4922.776.777.1.0.0.418.5.0.183.183.601.864.0.0.0.107.5.0.501.501.773.770.0.0.0.418.5.0.183.183.921.870.0.0.0" />
+  <Faction id="clan_empire_south_5"
+           name="{=6OEQJV6k}Julios"
+           tier="3"
+           owner="Hero.lord_1_48"
+           culture="Culture.empire"
+           super_faction="Kingdom.julios"
+           banner_key="11.71.4.4922.4922.776.777.1.0.0.119.5.0.398.398.766.706.0.0.0.217.5.0.351.351.769.855.0.0.0.512.5.0.156.156.934.866.0.0.0.512.5.0.156.156.603.864.0.0.0" />
+  <Faction id="clan_empire_south_6"
+           name="{=BxCRDt5m}Vizartos"
+           tier="2"
+           owner="Hero.lord_1_54"
+           culture="Culture.empire"
+           super_faction="Kingdom.empire_s_6"
+           banner_key="11.71.4.4922.4922.776.777.1.0.0.435.5.0.508.508.767.759.0.0.0.423.5.0.507.507.754.718.0.0.0" />
+  <Faction id="clan_empire_south_7"
+           name="{=Ds2vQVwr}Avlonos"
+           tier="2"
+           owner="Hero.lord_1_55"
+           culture="Culture.empire"
+           super_faction="Kingdom.empire_s_7"
+           banner_key="11.71.4.4922.4922.776.777.1.0.0.510.5.0.507.55.761.987.0.0.0.459.5.0.507.507.761.750.0.0.0.510.5.0.507.171.762.959.0.0.0.510.5.0.507.171.758.584.0.0.0.510.5.0.507.55.758.553.0.0.0" />
+  <Faction id="clan_empire_south_8"
+           name="{=8Wi66Sp2}Prienicos"
+           tier="1"
+           owner="Hero.lord_1_72"
+           culture="Culture.empire"
+           super_faction="Kingdom.prienicos"
+           banner_key="11.71.4.4922.4922.776.777.1.0.0.147.5.0.456.456.767.765.0.0.0" />
+  <!--
+	ASURAI
+	Jawwal, Ghilman0
+	The Asuri, three tribes who all trace their lineage to the ancient patriarch Asur, were nomads who were established as a client kingdom to guard the Empire's south, essentially being paid to protect caravans instead of raid them. As the empire contracts they have made themselves independent, and indeed have pressed claims of marriage to the imperial throne itself.
+	The leaders of the Banu Hulyan claim the title of Sultan of the Asuri. They are the richest of the clans in the south, masters of the key passes between the lake and the outer desert, and are seen by other tribes as haughty and amoral. They are close to the Ghulam, a group of warrior slaves that has converted itself to a mercenary military order.
+	The Banu Sarran are recently settled bedouin, who seized the Banu Hulyan's holdings in the outer oases but were eventually accepted as clients and vassals. They are thought of as upstarts by the others, a reputation which they in fact relish. They celebrate their nomadic past with carefully poems on their success in battle over the other tribes, or in seducing the other tribes' daughters. This does not endear them to other Asuris. They maintain close ties with the Jawwal, a clan of outcasts who still keep the nomadic lifestyle.
+	The Banu Qild are known as a dour ascetics, looking down from their desert fastnesses with disapproval on both the wealthy Banu Hulyan and the poor and roguish Banu Sarran. They answer readily enough to the Banu Hulyan's summons for war, but have also made hints that they may some day attempt to seize the sultanate to cleanse the Asuri lands from corruption.
+	The Ghulam are an order of warrior-slaves. They originated as the bodyguard of an imperial noble who tried - and failed - to subdue the desert frontier, but during the chaos that preceded the establishment of the Asuri state they set themselves up as independent mercenaries. They purchase new recruits from slave markets across the empire, putting them through a rigorous course of training before initiating them into the order.	
+	-->
+  <!--Quraysh-like clan, established and mercantile -->
+  <Faction id="clan_aserai_1"
+           name="{=9Y1u2onl}Banu Hulyan"
+           tier="6"
+           owner="Hero.lord_3_1"
+           culture="Culture.aserai"
+           super_faction="Kingdom.banu_hulyan"
+           banner_key="11.101.75.4345.4345.776.777.1.0.0.212.1.0.484.484.757.780.0.0.359" />
+  <!--
+	Quraysh, also based on Osama Bin Munqidh, fastidious
+	Patriarch, Unqidh, cautious, generous
+	POSITIVE ties to Ghulam
+	-->
+  <!--Upstart clan, recently settled bedouin -->
+  <Faction id="clan_aserai_2"
+           name="{=fvYgmrjG}Banu Sarran"
+           tier="5"
+           owner="Hero.lord_3_3"
+           culture="Culture.aserai"
+           super_faction="Kingdom.banu_sarran"
+           banner_key="11.101.75.4345.4345.776.777.1.0.0.515.1.0.177.177.770.582.0.0.0.223.1.0.482.482.767.763.0.0.359.515.1.0.177.177.764.953.0.0.0" />
+  <!--
+	Jahaliya poet boaster
+	POSITIVE ties to Jawal	
+	-->
+  <!-- Ascetics -->
+  <Faction id="clan_aserai_3"
+           name="{=wFR1ukg9}Banu Qild"
+           tier="5"
+           owner="Hero.lord_3_5"
+           culture="Culture.aserai"
+           super_faction="Kingdom.banu_qild"
+           banner_key="11.101.75.4345.4345.776.777.1.0.0.446.1.0.452.452.764.763.0.0.359.309.1.0.386.386.640.767.0.0.320.309.1.0.383.383.900.778.0.0.146" />
+  <Faction id="clan_aserai_4"
+           name="{=lUfFxWlk}Banu Qaraz"
+           tier="3"
+           owner="Hero.lord_3_16"
+           culture="Culture.aserai"
+           super_faction="Kingdom.banu_qaraz"
+           banner_key="11.101.75.4345.4345.776.777.1.0.0.446.1.0.452.452.764.763.0.0.359.309.1.0.386.386.640.767.0.0.320.309.1.0.383.383.900.778.0.0.146" />
+  <Faction id="clan_aserai_5"
+           name="{=zY2TQC9t}Banu Arbas"
+           tier="2"
+           owner="Hero.lord_3_17"
+           culture="Culture.aserai"
+           super_faction="Kingdom.banu_arbas"
+           banner_key="11.101.75.4345.4345.776.777.1.0.0.425.1.0.500.500.768.829.0.0.359.400.1.0.162.162.776.944.0.0.0.411.1.0.260.260.775.640.0.0.0" />
+  <Faction id="clan_aserai_6"
+           name="{=l6JtB97p}Banu Atij"
+           tier="1"
+           owner="Hero.lord_3_18"
+           culture="Culture.aserai"
+           super_faction="Kingdom.banu_atij"
+           banner_key="11.101.75.4345.4345.776.777.1.0.0.222.1.0.507.507.765.765.0.0.359.411.1.0.256.256.762.782.0.0.0" />
+  <Faction id="clan_aserai_7"
+           name="{=Aft8nsgn}Banu Sarmal"
+           tier="2"
+           owner="Hero.lord_3_19"
+           culture="Culture.aserai"
+           super_faction="Kingdom.banu_sarmal"
+           banner_key="11.101.75.4345.4345.776.777.1.0.0.426.1.0.508.508.767.717.0.0.268.421.1.0.425.425.748.850.0.0.89" />
+  <Faction id="clan_aserai_8"
+           name="{=o4wKMT9x}Banu Habbab"
+           tier="1"
+           owner="Hero.lord_3_20"
+           culture="Culture.aserai"
+           super_faction="Kingdom.banu_habbab"
+           banner_key="11.101.75.4345.4345.776.777.1.0.0.428.1.0.510.510.762.782.0.0.359.321.1.0.386.386.767.738.0.0.359.507.1.0.90.90.684.766.0.0.359.507.1.0.90.90.835.764.0.0.359" />
+  <!--
+	VLANDIA
+	Brotherhood of the Woods
+	Free Company
+	Vlandian warships first came to the western shores of Calradia as traders. Then, seeing how rich the land was, they decided to take it. First the Empire fought them, then when that failed granted them noble titles and estates to make them into imperial clients, and then - when they rebelled - fought them again. Now they are an independent kingdom, known for steel-forging and their horses, and their armored riders are a constant menace to the Empire's western marches. 	
+	-->
+  <Faction id="clan_vlandia_1"
+           name="{=3o5s6L3y}dey Meroc"
+           tier="6"
+           owner="Hero.lord_4_1"
+           culture="Culture.vlandia"
+           super_faction="Kingdom.dey_meroc"
+           banner_key="11.71.14.4922.4922.776.777.1.0.0.346.15.0.509.509.770.757.0.0.0.424.15.0.213.213.585.771.0.0.0.424.15.0.213.213.951.763.0.0.0" />
+  <!--
+	Derthert - Cunning but weary king, Hugh Capet, trying to retain compassion
+	Derthert, of the House of Meroc, is King of the Vlandians. His subjects regard him as a decent man but a tired one. He is worn down by years of struggle against vassals who swear oaths of fealty only to break them, who see no patch of pasture so worthless, no dynastic claim so unconvincingly traced, that they will not go to war over it. His heir, Alary, retains some of the optimism and vigor of youth, and it's widely believed that he will make a popular king. The  House of Meroc thinks of commoners as a counterbalance to the nobles, and have tried to elevate them to offices of authority when possible.
+  Eldest son is XXX. Dissolute, his father;s greatest headache
+  Younger son is Alary, knight-errant, gallant, but loyal to father
+	Heiress is Elyce, like Eleanor of Aquitaine, her father's daughter, determined to play the dynastic game to her best ability
+	Lieutenant - Merteon
+	
+	MINOR FACTION ties to Brotherhood of the Woods
+	-->
+  <Faction id="clan_vlandia_2"
+           name="{=qFntgcGy}dey Tihr"
+           tier="5"
+           owner="Hero.lord_4_3"
+           culture="Culture.vlandia"
+           super_faction="Kingdom.dey_tihr"
+           banner_key="11.71.14.4922.4922.580.740.1.0.0.419.15.0.511.511.767.776.0.0.0.512.15.0.125.125.656.894.0.0.0.512.15.0.125.125.888.653.0.0.0.512.15.0.125.125.881.899.0.0.0.512.15.0.125.125.650.652.0.0.0" />
+  <!--
+	Patriarch - Rendric.	Wealthy, entitled clan. Duc de Berry	
+	Rendric of the House of Tir is wealthy and notoriously avaricious, known for squeezing every last denar out of his subjects while neglecting his duty to defend them. His son meanwhile is considered depraved, and is almost as greatly feared as the Sturgian and Battanian raiders who he allows the rampage through the northlands as he pursues his desires. Rendric's daughter Liena is considered the saving grace of the family, who has donned armor and taken on the responsibilities that her male relatives neglect.
+	Heir is Furenhard - depraved and feared
+	Heiress is Liena, leads armies, somewhat feckless
+	Lieutenant - 	
+	-->
+  <Faction id="clan_vlandia_3"
+           name="{=mpjp1MT2}dey Arromanc"
+           tier="5"
+           owner="Hero.lord_4_6"
+           culture="Culture.vlandia"
+           super_faction="Kingdom.dey_arromanc"
+           banner_key="11.71.14.4922.4922.580.740.1.0.0.424.15.0.503.503.764.723.0.0.0.220.15.0.184.184.869.905.0.0.347.220.15.0.184.184.655.910.0.0.3" />
+  <!--
+	Calatild was her father's only child, and was named heir of the House of Arromanc in contrary to normal Vlandian custom. The claim to her lands staked by Ingalther of Cortain has allowed her to rally her relatives to her banner, overcoming any objections they might have to a female liege. 
+	Patriarch - Untheric, consort of queen
+	Queen - Calatild
+	Heir, Thomund - valiant but hotheaded, conventional
+	Uncle, Hecard
+	Heiress 
+	-->
+  <Faction id="clan_vlandia_4"
+           name="{=CS4rSk99}dey Cortain"
+           tier="5"
+           owner="Hero.lord_4_16"
+           culture="Culture.vlandia"
+           super_faction="Kingdom.dey_cortain"
+           banner_key="11.71.14.4922.4922.580.740.1.0.0.207.15.0.303.270.884.894.0.1.332.207.15.0.270.270.655.894.0.0.28.220.15.0.462.462.748.680.0.0.0.512.15.0.126.126.768.900.0.0.1" />
+  <!--
+	Fourth clan
+	Ingalther, lord of the House of Cortain, seized his estate from a much older illegitimate half-brother. His ambition and sense of entitlement is extreme even by Vlandian standards. He has a dynastic claim to Arromanc lands, and has been pressing Derther to disinherit Calatild and award her lands to him. Derthert has of course refused, as this would both start a war with the Arromancs and make Ingalther twice as powerful as the king, but Ingalther nonetheless greatly resents him for it. Ingalther keeps close ties with the Free Company, a notoriously rapacious band of mercenaries whose seaside castle lies near his domains.	
+	MINOR FACTIION ties to free company
+	-->
+  <Faction id="clan_vlandia_5"
+           name="{=9qAUWcfa}dey Gunric"
+           tier="3"
+           owner="Hero.lord_4_21"
+           culture="Culture.vlandia"
+           super_faction="Kingdom.dey_gunric"
+           banner_key="11.71.14.4922.4922.580.740.1.0.0.159.15.0.503.503.772.731.0.0.0.418.15.0.300.300.762.896.0.0.0" />
+  <Faction id="clan_vlandia_6"
+           name="{=vbLAA0RF}dey Valant"
+           tier="2"
+           owner="Hero.lord_4_22"
+           culture="Culture.vlandia"
+           super_faction="Kingdom.dey_valant"
+           banner_key="11.71.14.4922.4922.580.740.1.0.0.336.15.0.512.512.772.756.0.0.0.424.15.0.245.245.922.787.0.0.0.424.15.0.245.245.630.787.0.0.0.424.15.0.245.245.776.943.0.0.0" />
+  <Faction id="clan_vlandia_7"
+           name="{=LZVzzczs}dey Fortes"
+           tier="2"
+           owner="Hero.lord_4_23"
+           culture="Culture.vlandia"
+           super_faction="Kingdom.dey_fortes"
+           banner_key="11.71.14.4922.4922.580.740.1.0.0.141.15.0.473.473.768.814.0.0.0.301.15.0.416.416.752.923.0.0.90.301.15.0.416.416.756.625.0.0.269" />
+  <Faction id="clan_vlandia_8"
+           name="{=9NWQNInC}dey Molarn"
+           tier="2"
+           owner="Hero.lord_4_24"
+           culture="Culture.vlandia"
+           super_faction="Kingdom.dey_molarn"
+           banner_key="11.71.14.4922.4922.580.740.1.0.0.315.15.0.462.462.801.800.0.0.307.315.15.0.462.462.751.787.0.0.49.424.15.0.221.221.774.696.0.0.1" />
+  <Faction id="clan_vlandia_9"
+           name="{=LygSwU3i}dey Jelind"
+           tier="1"
+           owner="Hero.lord_4_27"
+           culture="Culture.vlandia"
+           super_faction="Kingdom.dey_jelind"
+           banner_key="11.71.14.4922.4922.580.740.1.0.0.335.15.0.509.509.762.754.0.0.1.336.15.0.190.190.767.721.0.0.1" />
+  <Faction id="clan_vlandia_10"
+           name="{=yQcZrUYi}dey Folcun"
+           tier="1"
+           owner="Hero.lord_4_28"
+           culture="Culture.vlandia"
+           super_faction="Kingdom.dey_folcun"
+           banner_key="11.71.14.4922.4922.580.740.1.0.0.305.15.0.444.444.759.762.0.0.0.206.15.0.480.480.653.760.0.0.17.206.15.0.480.480.872.768.0.0.194" />
+  <!--
+	BATTANIA
+	Minors: Wolfskins
+	-->
+  <Faction id="clan_battania_1"
+           name="{=a67wFbUw}fen Gruffendoc"
+           tier="6"
+           owner="Hero.lord_5_1"
+           culture="Culture.battania"
+           super_faction="Kingdom.fen_gruffendoc"
+           banner_key="11.101.75.4345.4345.776.777.1.0.0.456.39.0.467.467.757.864.0.0.180.413.39.0.274.274.746.644.0.0.124" />
+  <Faction id="clan_battania_2"
+           name="{=zvas3ieB}fen Derngil"
+           tier="5"
+           owner="Hero.lord_5_3"
+           culture="Culture.battania"
+           super_faction="Kingdom.fen_derngil"
+           banner_key="11.101.75.4345.4345.776.777.1.0.0.412.39.0.508.508.774.799.0.0.180" />
+  <!--		
+		Patriarch: Ergeon, 5_3 whitebeard, arthur-type. Submits to Gruffendoc because they realize latter's capacity to lead
+		Active queen: Mywin 5_4, holds her own lands and fights in her own right
+		Heir Sein 5_8
+		Inactive heiress (5_11)
+		Lieutenant: 5_14
+	-->
+  <Faction id="clan_battania_3"
+           name="{=0m0IUnL1}fen Uvain"
+           tier="5"
+           owner="Hero.lord_5_5"
+           culture="Culture.battania"
+           super_faction="Kingdom.fen_uvain"
+           banner_key="11.101.75.4345.4345.776.777.1.0.0.427.39.0.261.261.770.869.0.0.359.133.39.0.380.380.769.696.0.0.0" />
+  <!--		
+	Fen Uvain
+		Old house, know they lack the charisma to conquer, prefer to plot to maintain their independence
+		Good ties to Wolfskins
+	
+		Meledir. Patriarch (5_5) - Cautious, deceitful, unctuous, 
+		Inactive queen (5_6)
+		Heir - Culharn (5_9) conventional
+		Heiress (5_12)
+		Lieutenant (5_15)
+	-->
+  <Faction id="clan_battania_4"
+           name="{=k3djFmuO}fen Penraic"
+           tier="5"
+           owner="Hero.lord_5_14"
+           culture="Culture.battania"
+           super_faction="Kingdom.fen_penraic"
+           banner_key="11.101.75.4345.4345.776.777.1.0.0.456.39.0.343.343.770.869.0.0.179.132.39.0.438.438.771.764.0.0.0" />
+  <Faction id="clan_battania_5"
+           name="{=ObBvcDhJ}fen Giall"
+           tier="2"
+           owner="Hero.lord_5_16"
+           culture="Culture.battania"
+           super_faction="Kingdom.fen_giall"
+           banner_key="11.101.75.4345.4345.776.777.1.0.0.535.39.0.189.178.822.905.0.1.0.535.39.0.178.178.700.904.0.0.0.151.39.0.425.425.773.717.0.0.0" />
+  <Faction id="clan_battania_6"
+           name="{=qoLWSdRE}fen Eingal"
+           tier="2"
+           owner="Hero.lord_5_17"
+           culture="Culture.battania"
+           super_faction="Kingdom.fen_eingal"
+           banner_key="11.101.75.4345.4345.776.777.1.0.0.504.39.0.101.101.768.959.0.0.180.503.39.0.177.177.773.768.0.0.0.406.39.0.509.509.779.754.0.0.0.504.39.0.101.101.770.574.0.0.0" />
+  <Faction id="clan_battania_7"
+           name="{=HMnHaJac}fen Morcar"
+           tier="1"
+           owner="Hero.lord_5_15"
+           culture="Culture.battania"
+           super_faction="Kingdom.fen_morcar"
+           banner_key="11.101.75.4345.4345.776.777.1.0.0.504.39.96.80.80.771.928.1.0.180.407.39.0.509.509.767.757.0.0.0" />
+  <!--
+	KHUZAITS
+	The Khuzaits thundered into the steppes west of Lake Baetiros two generations ago, driving other nomads before them. They and their vassal tribes, the Khergit and the Arkit, seized some of the cities on the fringe of the empire. They grew rich on the caravans from the lands of the Padishah to the east, trading in their yurts for carpeted palaces. But they still lead raids into the heart of the empire, their swift horse archers spreading terror for leagues around their armies.
+	(Minor faction:) The Hawlan are unsubjugated nomads, living on the fringes of the Khuzait's kingdom. Other Khuzait mock them for living only in yurts and smelling like the sheep dung they use for their fuel. They are what the Khuzait used to be, but despite this - or perhaps because of this - the newly rich, newly settled tribes treat them with scorn. Sons of Noyans have even been known to lead expeditions into the deep steppe to hunt them like animals. The Khergit however turned to them in their recent moment of crisis, using them as mercenaries.	
+  6
+	-->
+  <Faction id="clan_khuzait_1"
+           name="{=CRSFOSil}Urkhunait"
+           tier="6"
+           owner="Hero.lord_6_1"
+           culture="Culture.khuzait"
+           super_faction="Kingdom.urkhunait"
+           banner_key="11.25.10.4345.4345.780.802.1.0.0.449.11.0.327.349.780.641.0.0.0.449.11.0.319.339.780.903.0.0.180.510.11.0.351.240.643.773.0.0.180.510.11.0.351.240.958.772.0.0.180" />
+  <!--
+		The Urkhunait are ruling clan of the Khuzaits, named after the Khagan Urkhun who transformed them from squabbling bands of fierce but undisciplined nomads into a formidable machine of war. The current Khan, Tulag, is cut from this cloth. Grim, humorless, as demanding of his followers as he is of himself, he has an unblemished record on the battlefield. But the Khuzaits are no longer a hungry people, desperate for a iron-handed warlord to lead them to richer pastures, and from the comfort of their palaces many clan leaders are beginning to wonder if they too could serve as Khagan.
+		Patriarch: Tulag. Aescetic.
+		Valorous, Honorable, Cruel, Ungenerous
+	
+		Heir: overawed, 
+		Heiress is warrior
+    5	
+	-->
+  <Faction id="clan_khuzait_2"
+           name="{=Q1nAHnV7}Khergit"
+           tier="5"
+           owner="Hero.lord_6_4"
+           culture="Culture.khuzait"
+           super_faction="Kingdom.khergit"
+           banner_key="11.25.10.4345.4345.780.802.1.0.0.128.11.0.385.385.778.762.0.0.0" />
+  <!--
+		The Khergit, or Roan Horses, were one of the first peoples to be subjugated by Urkhun. Although assimilated into his confederacy by force, they proved themselves some of his most valuable warriors, and were rewarded with extensive lands in his new conquests. War however took a heavy toll of the clan's males, and ten years ago the Arkit made a bid for their territories. Mesui, sister of a slain noyan and part of a long tradition of steppe warrior-women, led the Khergit's counter-attack. She continues to rule a clan nervous about its brush with extinction, and resentful of the Urkhunait for doing little to help them.
+		Matriarch - female, widow, very conscious of her clan's brush with extinction
+	
+		Heir: Baybuz Energetic but sometimes weak-willed confessional 
+		Valorous, deceitful, generous
+    5
+	-->
+  <Faction id="clan_khuzait_3"
+           name="{=VpF6skYs}Arkit"
+           tier="5"
+           owner="Hero.lord_6_5"
+           culture="Culture.khuzait"
+           super_faction="Kingdom.arkit"
+           banner_key="11.25.10.4345.4345.780.802.1.0.0.446.11.0.438.438.782.762.0.0.269.503.11.0.164.164.770.768.0.0.315.509.11.0.133.133.783.916.0.0.315.503.11.0.95.95.964.761.0.0.315.503.11.0.95.95.597.764.0.0.315.509.11.0.133.133.778.614.0.0.315" />
+  <!--
+		The Arkit, the Children of the Sky, were formerly the richest and most prestigious of the tribes in the Khuzait homelands, of which Urkhun and his followers were at first merely a humble offshoot. They followed the Khuzait hordes to the west but are not happy about living in the shadow of a less ancient lineage. Their patriarch, the noyan Monchug, models himself on Tulag but is somewhat less competent.
+		Embittered elder tribe
+	
+		Patriarch: Honest, ungenerous, cruel like ascetic
+		Heir: gallant	
+    3
+    2
+    2
+    1
+    1
+	-->
+  <Faction id="clan_khuzait_4"
+           name="{=m0teef5g}Tigrit"
+           tier="3"
+           owner="Hero.lord_6_16"
+           culture="Culture.khuzait"
+           super_faction="Kingdom.tigrit"
+           banner_key="11.25.10.4345.4345.780.802.1.0.0.503.11.0.164.164.910.900.0.0.0.314.11.0.508.508.777.763.0.0.0.503.11.0.164.164.630.900.0.0.0" />
+  <Faction id="clan_khuzait_5"
+           name="{=gXeF1yKn}Harfit"
+           tier="2"
+           owner="Hero.lord_6_17"
+           culture="Culture.khuzait"
+           super_faction="Kingdom.harfit"
+           banner_key="11.25.10.4345.4345.780.802.1.0.0.427.11.0.438.438.767.854.0.0.359.503.11.0.211.211.762.809.0.0.358.218.11.0.243.243.752.625.0.0.0" />
+  <Faction id="clan_khuzait_6"
+           name="{=kbGk2so8}Baltait"
+           tier="2"
+           owner="Hero.lord_6_18"
+           culture="Culture.khuzait"
+           super_faction="Kingdom.baltait"
+           banner_key="11.25.10.4345.4345.780.802.1.0.0.218.11.0.194.194.801.681.0.0.359.150.11.0.444.444.759.825.0.0.0" />
+  <Faction id="clan_khuzait_7"
+           name="{=b6SEM6Ab}Koltit"
+           tier="1"
+           owner="Hero.lord_6_19"
+           culture="Culture.khuzait"
+           super_faction="Kingdom.koltit"
+           banner_key="11.25.10.4345.4345.780.802.1.0.0.117.11.0.375.375.835.859.0.0.179.508.11.0.119.119.632.908.0.0.0.117.11.0.371.371.691.699.0.0.0.508.11.0.117.117.910.652.0.0.0" />
+  <Faction id="clan_khuzait_8"
+           name="{=W9n5iPbB}Yanserit"
+           tier="1" 
+           owner="Hero.lord_6_20"
+           culture="Culture.khuzait_8"
+           super_faction="Kingdom.yanserit"
+           banner_key="11.25.10.4345.4345.780.802.1.0.0.427.11.0.288.288.710.775.0.0.273.427.11.0.288.288.816.763.0.0.93.503.11.0.201.201.763.768.0.0.0.510.11.0.288.201.898.621.0.0.0.510.11.0.288.201.902.915.0.0.0.510.11.0.288.201.646.915.0.0.0.510.11.0.288.201.638.621.0.0.0" />
+  <!--
+	STURGIA
+	Jomsvikings
+	-->
+  <Faction id="clan_sturgia_1"
+           name="{=A4wIVnM4}Gundaroving"
+           tier="6"
+           owner="Hero.lord_2_1"
+           culture="Culture.sturgia"
+           super_faction="Kingdom.gundaroving"
+           banner_key="11.71.12.4922.4922.580.740.1.0.0.333.111.0.487.487.756.750.0.0.0" />
+  <!--		
+		Ruling clan, centralizing,
+		Patriarch: Raganvad, Ivan/Hardrada type, minimal sense of humor
+		Heir: Simir, ambitious but treated coldly by father, wants to prove self
+	-->
+  <Faction id="clan_sturgia_2"
+           name="{=Eu932blQ}Kuloving"
+           tier="5"
+           owner="Hero.lord_2_3"
+           culture="Culture.sturgia"
+           super_faction="Kingdom.kuloving"
+           banner_key="11.71.12.4922.4922.580.740.1.0.0.332.111.0.471.471.759.727.0.0.0.406.111.0.202.202.773.950.0.0.1" />
+  <!--		
+		Old Believers, ties to Jomsvikings
+		Patriarch - Olek old, ferocious	
+	
+		Heir - Urik, fierce but high-spirited
+	-->
+  <Faction id="clan_sturgia_3"
+           name="{=mddbprXj}Vagiroving"
+           tier="5"
+           owner="Hero.lord_2_5"
+           culture="Culture.sturgia"
+           super_faction="Kingdom.vagiroving"
+           banner_key="11.71.12.4922.4922.580.740.1.0.0.347.111.0.509.509.769.706.0.0.0.302.111.0.408.408.682.920.0.0.60.302.111.0.408.408.871.898.0.0.309" />
+  <!--		
+		Based on Icelandish explorers - independent forging outward
+	
+		Patriarch: Havyn
+		Heir: Lek
+		Uncle: Rategost - Mystic
+		Heiress: Svana - heiress, leads armies
+	-->
+  <Faction id="clan_sturgia_4"
+           name="{=AppNvfPv}Ormidoving"
+           tier="4"
+           owner="Hero.lord_2_16"
+           culture="Culture.sturgia"
+           super_faction="Kingdom.ormidoving"
+           banner_key="11.71.12.4922.4922.580.740.1.0.0.307.111.0.416.416.781.835.0.0.180.307.111.0.416.416.793.720.0.0.0.442.111.0.310.310.673.844.0.0.180.442.111.0.310.310.901.718.0.0.0" />
+  <Faction id="clan_sturgia_5"
+           name="{=s0AVQCbJ}Togaroving"
+           tier="3"
+           owner="Hero.lord_2_17"
+           culture="Culture.sturgia"
+           super_faction="Kingdom.togaroving"
+           banner_key="11.71.12.4922.4922.580.740.1.0.0.456.111.0.504.504.765.698.0.0.359.444.111.0.116.116.759.923.0.0.179.454.111.0.116.116.884.922.0.0.179.454.111.0.116.116.644.921.0.0.359" />
+  <Faction id="clan_sturgia_6"
+           name="{=EnZHNc2k}Isyaroving"
+           tier="2"
+           owner="Hero.lord_2_18"
+           culture="Culture.sturgia"
+           super_faction="Kingdom.isyaroving"
+           banner_key="11.71.12.4922.4922.580.740.1.0.0.441.111.0.511.511.770.767.0.0.359" />
+  <Faction id="clan_sturgia_7"
+           name="{=xw0eTkkb}Vezhoving"
+           tier="2"
+           owner="Hero.lord_2_19"
+           culture="Culture.sturgia"
+           super_faction="Kingdom.vezhoving"
+           banner_key="11.71.12.4922.4922.580.740.1.0.0.421.111.0.502.502.785.754.0.0.359.451.111.0.128.128.762.771.0.0.359" />
+  <Faction id="clan_sturgia_8"
+           name="{=W2HkbCeX}Ubroving"
+           tier="1"
+           owner="Hero.lord_2_20"
+           culture="Culture.sturgia"
+           super_faction="Kingdom.ubroving"
+           banner_key="11.71.12.4922.4922.580.740.1.0.0.138.111.0.509.509.762.770.0.0.359" />
+</Factions>

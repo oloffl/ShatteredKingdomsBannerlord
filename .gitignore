@@ -1,0 +1,9 @@
+
+# User
+.vs/*
+*.user
+
+# Binaries
+ShatteredKingdoms/bin/*
+ShatteredKingdoms/obj/*
+packages/*
