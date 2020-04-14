@@ -14,6 +14,6 @@ Drop the ShatteredKingdoms folder containing the SubModule.xml, bin and ModuleDa
 
 ### Known Issues
 
-```The original faction leader cannot unjoin his own faction```
-```Clans which only own a castle cannot become their own kingdom. I haven't figured out how to give them a town, help appriciated```
-```Every clan exists as a kingdom in the encyclopedia, but they are not (this is because I changed the spkingdoms.xml believing that they could. I'm keeping it for now if I happen to figure it out)```
+The original faction leader cannot unjoin his own faction
+Clans which only own a castle cannot become their own kingdom. I haven't figured out how to give them a town, help appriciated
+Every clan exists as a kingdom in the encyclopedia, but they are not (this is because I changed the spkingdoms.xml believing that they could. I'm keeping it for now if I happen to figure it out)
