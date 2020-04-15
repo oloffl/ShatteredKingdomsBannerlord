@@ -21,7 +21,7 @@ Also check if the .dll in the bin folder is not blocked by windows by right clic
 ### Known Issues
 
 1. The original kingdom leader cannot unjoin his own faction
-2. Clans which only own a castle cannot become their own kingdom. I haven't figured out how to give them a town, help appriciated. This results in the original kingdom having more clans than the ones who break off.
+2. Clans which only own a castle cannot become their own kingdom. I haven't figured out how to give them a town, help appreciated. This results in the original kingdom having more clans than the ones who break off.
 3. Every clan exists as a kingdom in the encyclopedia, but they are not (this is because I changed the spkingdoms.xml believing that they could. I'm keeping it for now if I happen to figure it out)
 4. A report of high RAM to crash at campaign start
 5. Possible mod conflict with DiplomacyReworked https://www.nexusmods.com/mountandblade2bannerlord/mods/427
