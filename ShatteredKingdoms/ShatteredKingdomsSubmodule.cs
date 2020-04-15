@@ -34,7 +34,7 @@ namespace ShatteredKingdoms
 		{
 			base.OnNewGameCreated(game, initializerObject);
 
-			Log.Info("OnNewGameCreated");
+			//Log.Info("OnNewGameCreated");
 
 			if (!(Campaign.Current.Clans is MBReadOnlyList<Clan> clans))
 				return;
@@ -53,7 +53,7 @@ namespace ShatteredKingdoms
 					}
 				}
 
-				if (!isOnlyCastle && !clans[i].Leader.Equals(clans[i].Kingdom.Leader))
+				if (!isOnlyCastle && !clans[i].Leader.Equals(clans[i].Kingdom.Leader)) //
 				{
 					for (int y = 0; y < kingdoms.Count; y++)
 					{
@@ -62,15 +62,15 @@ namespace ShatteredKingdoms
 
 						if (kingdomName.Equals(clanName))
 						{
-							Log.Info(i + ": Clan " + clans[i].GetName() + " joining " +
-									 kingdoms[y]);
+							//Log.Info(i + ": Clan " + clans[i].GetName() + " joining " +
+							//         kingdoms[y]);
 							ChangeKingdomAction.ApplyByJoinToKingdom(clans[i], kingdoms[y], true);
 						}
 					}
 				}
 				else
 				{
-					Log.Info(clans[i] + " has only castle or is kingdom leader, skipping");
+					//Log.Info(clans[i] + " has only castle or is kingdom leader, skipping");
 				}
 			}
 		}
@@ -81,7 +81,7 @@ namespace ShatteredKingdoms
 			{
 				return;
 			}
-			Log.Info("OnGameStart");
+			//Log.Info("OnGameStart");
 		}
 	}
 }

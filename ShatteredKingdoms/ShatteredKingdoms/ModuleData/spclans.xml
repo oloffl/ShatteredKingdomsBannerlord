@@ -416,7 +416,7 @@
            owner="Hero.lord_1_3"
            culture="Culture.empire"
            super_faction="Kingdom.argoros"
-           banner_key="11.71.4.4922.4922.776.777.1.0.0.142.5.0.502.502.754.693.0.0.1.142.5.0.502.502.772.869.0.0.179" />
+           banner_key="11.71.151.4922.4922.776.777.1.0.0.142.5.0.502.502.754.693.0.0.1.142.5.0.502.502.772.869.0.0.179" />
   <!--
 	Sympathetic: O
 	Philosophical clan? Views Osticos as most likely to restore republic
@@ -440,7 +440,7 @@
            owner="Hero.lord_1_5"
            culture="Culture.empire"
            super_faction="Kingdom.empire_3"
-           banner_key="11.71.4.4345.4345.776.777.1.0.0.302.5.0.423.423.814.711.0.0.327.302.5.0.423.423.720.712.0.0.32.202.5.0.424.424.882.908.0.0.47.202.5.0.430.443.665.914.0.1.316.320.5.0.365.365.772.796.0.0.0" />
+           banner_key="11.71.78.4345.4345.776.777.1.0.0.302.5.0.423.423.814.711.0.0.327.302.5.0.423.423.720.712.0.0.32.202.5.0.424.424.882.908.0.0.47.202.5.0.430.443.665.914.0.1.316.320.5.0.365.365.772.796.0.0.0" />
   <!--
 	Unsympathetic: close-minded
 	Patriarch (1_5) is imperial blowhard
@@ -453,14 +453,14 @@
            owner="Hero.lord_1_20"
            culture="Culture.empire"
            super_faction="Kingdom.impestores"
-           banner_key="11.71.4.4345.4345.774.771.1.0.0.304.5.0.426.426.921.755.0.0.0.443.5.0.510.510.774.762.0.0.0.304.5.0.426.426.622.759.0.0.0" />
+           banner_key="11.71.86.4345.4345.774.771.1.0.0.304.5.0.426.426.921.755.0.0.0.443.5.0.510.510.774.762.0.0.0.304.5.0.426.426.622.759.0.0.0" />
   <Faction id="clan_empire_north_5"
            name="{=4rr3d8hY}Dolentor"
            tier="5"
            owner="Hero.lord_1_50"
            culture="Culture.empire"
            super_faction="Kingdom.dolentor"
-           banner_key="11.71.4.8690.8690.590.796.1.0.0.202.5.0.400.400.868.877.0.0.55.202.5.0.402.423.669.874.0.1.303.331.5.0.400.400.765.716.0.0.0" />
+           banner_key="11.71.130.8690.8690.590.796.1.0.0.202.5.0.400.400.868.877.0.0.55.202.5.0.402.423.669.874.0.1.303.331.5.0.400.400.765.716.0.0.0" />
   <Faction id="clan_empire_north_6"
            name="{=9ORFG9l4}Chonis"
            tier="2"
@@ -489,7 +489,7 @@
            owner="Hero.lord_1_9"
            culture="Culture.empire"
            super_faction="Kingdom.varros"
-           banner_key="11.71.4.4922.4922.776.777.1.0.0.337.5.0.454.454.759.690.0.0.0.301.5.0.322.322.768.889.0.0.90.301.5.0.322.322.767.954.0.0.270" />
+           banner_key="11.71.98.4922.4922.776.777.1.0.0.337.5.0.454.454.759.690.0.0.0.301.5.0.322.322.768.889.0.0.90.301.5.0.322.322.767.954.0.0.270" />
   <!--
 	Fully unsympathetic clan - terrorizes their valley
 	Apokos, Father - debauched, based on Alexius Apokaukos, master schemer	
@@ -503,7 +503,7 @@
            owner="Hero.lord_1_11"
            culture="Culture.empire"
            super_faction="Kingdom.dionicos"
-           banner_key="11.71.4.4922.4922.776.777.1.0.0.103.5.0.477.477.753.758.0.0.358" />
+           banner_key="11.71.67.4922.4922.776.777.1.0.0.103.5.0.477.477.753.758.0.0.358" />
   <!--
 	Sympathetic - Border guards - many sacrifices but much sense of entitlement
 	Ancestor was Asurai emir
@@ -515,14 +515,14 @@
            owner="Hero.lord_1_40"
            culture="Culture.empire"
            super_faction="Kingdom.elaches"
-           banner_key="11.71.4.4922.4922.776.777.1.0.0.201.5.0.393.393.904.775.0.0.180.201.5.0.508.508.778.768.0.0.0.201.5.0.393.393.617.781.0.0.180" />
+           banner_key="11.71.70.4922.4922.776.777.1.0.0.201.5.0.393.393.904.775.0.0.180.201.5.0.508.508.778.768.0.0.0.201.5.0.393.393.617.781.0.0.180" />
   <Faction id="clan_empire_west_5"
            name="{=cd0yDTM1}Lonalion"
            tier="5"
            owner="Hero.lord_1_45"
            culture="Culture.empire"
            super_faction="Kingdom.lonalion"
-           banner_key="11.71.4.4922.4922.776.777.1.0.0.418.5.0.299.299.762.774.0.0.0.500.5.0.503.503.750.783.0.0.0.500.5.0.423.423.752.783.0.0.0" />
+           banner_key="11.71.100.4922.4922.776.777.1.0.0.418.5.0.299.299.762.774.0.0.0.500.5.0.503.503.750.783.0.0.0.500.5.0.423.423.752.783.0.0.0" />
   <Faction id="clan_empire_west_6"
            name="{=ApJrV7bA}Sorados"
            tier="2"
@@ -564,7 +564,7 @@
            owner="Hero.lord_1_15"
            culture="Culture.empire"
            super_faction="Kingdom.leonipardes"
-           banner_key="11.71.4.4922.4922.776.777.1.0.0.214.5.0.463.463.758.758.0.0.0" />
+           banner_key="11.71.12.4922.4922.776.777.1.0.0.214.5.0.463.463.758.758.0.0.0" />
   <!--	
 	Mixed - Plutocratic
 	Patriarch #15 - Old-school aristocrat, doing something he finds distasteful to maintain his family's position
@@ -577,7 +577,7 @@
            owner="Hero.lord_1_17"
            culture="Culture.empire"
            super_faction="Kingdom.mestricaros"
-           banner_key="11.71.4.4922.4922.776.777.1.0.0.108.5.0.485.485.760.650.0.0.0.325.5.0.501.501.756.818.0.0.0" />
+           banner_key="11.71.138.4922.4922.776.777.1.0.0.108.5.0.485.485.760.650.0.0.0.325.5.0.501.501.756.818.0.0.0" />
   <!--
 	Patriarch - #17 Long list of grievances against other large families, sided with Pathros by default
 	Uncle - Cunning, frustrated
@@ -588,21 +588,21 @@
            owner="Hero.lord_1_30"
            culture="Culture.empire"
            super_faction="Kingdom.hongeros"
-           banner_key="11.71.4.4922.4922.776.777.1.0.0.418.5.0.183.183.601.864.0.0.0.107.5.0.501.501.773.770.0.0.0.418.5.0.183.183.921.870.0.0.0" />
+           banner_key="11.71.119.4922.4922.776.777.1.0.0.418.5.0.183.183.601.864.0.0.0.107.5.0.501.501.773.770.0.0.0.418.5.0.183.183.921.870.0.0.0" />
   <Faction id="clan_empire_south_5"
            name="{=6OEQJV6k}Julios"
            tier="3"
            owner="Hero.lord_1_48"
            culture="Culture.empire"
            super_faction="Kingdom.julios"
-           banner_key="11.71.4.4922.4922.776.777.1.0.0.119.5.0.398.398.766.706.0.0.0.217.5.0.351.351.769.855.0.0.0.512.5.0.156.156.934.866.0.0.0.512.5.0.156.156.603.864.0.0.0" />
+           banner_key="11.71.77.4922.4922.776.777.1.0.0.119.5.0.398.398.766.706.0.0.0.217.5.0.351.351.769.855.0.0.0.512.5.0.156.156.934.866.0.0.0.512.5.0.156.156.603.864.0.0.0" />
   <Faction id="clan_empire_south_6"
            name="{=BxCRDt5m}Vizartos"
            tier="2"
            owner="Hero.lord_1_54"
            culture="Culture.empire"
            super_faction="Kingdom.empire_s_6"
-           banner_key="11.71.4.4922.4922.776.777.1.0.0.435.5.0.508.508.767.759.0.0.0.423.5.0.507.507.754.718.0.0.0" />
+           banner_key="11.71.119.4922.4922.776.777.1.0.0.435.5.0.508.508.767.759.0.0.0.423.5.0.507.507.754.718.0.0.0" />
   <Faction id="clan_empire_south_7"
            name="{=Ds2vQVwr}Avlonos"
            tier="2"
@@ -646,7 +646,7 @@
            owner="Hero.lord_3_3"
            culture="Culture.aserai"
            super_faction="Kingdom.banu_sarran"
-           banner_key="11.101.75.4345.4345.776.777.1.0.0.515.1.0.177.177.770.582.0.0.0.223.1.0.482.482.767.763.0.0.359.515.1.0.177.177.764.953.0.0.0" />
+           banner_key="11.101.5.4345.4345.776.777.1.0.0.515.1.0.177.177.770.582.0.0.0.223.1.0.482.482.767.763.0.0.359.515.1.0.177.177.764.953.0.0.0" />
   <!--
 	Jahaliya poet boaster
 	POSITIVE ties to Jawal	
@@ -658,28 +658,28 @@
            owner="Hero.lord_3_5"
            culture="Culture.aserai"
            super_faction="Kingdom.banu_qild"
-           banner_key="11.101.75.4345.4345.776.777.1.0.0.446.1.0.452.452.764.763.0.0.359.309.1.0.386.386.640.767.0.0.320.309.1.0.383.383.900.778.0.0.146" />
+           banner_key="11.101.95.4345.4345.776.777.1.0.0.446.1.0.452.452.764.763.0.0.359.309.1.0.386.386.640.767.0.0.320.309.1.0.383.383.900.778.0.0.146" />
   <Faction id="clan_aserai_4"
            name="{=lUfFxWlk}Banu Qaraz"
            tier="3"
            owner="Hero.lord_3_16"
            culture="Culture.aserai"
            super_faction="Kingdom.banu_qaraz"
-           banner_key="11.101.75.4345.4345.776.777.1.0.0.446.1.0.452.452.764.763.0.0.359.309.1.0.386.386.640.767.0.0.320.309.1.0.383.383.900.778.0.0.146" />
+           banner_key="11.101.114.4345.4345.776.777.1.0.0.446.1.0.452.452.764.763.0.0.359.309.1.0.386.386.640.767.0.0.320.309.1.0.383.383.900.778.0.0.146" />
   <Faction id="clan_aserai_5"
            name="{=zY2TQC9t}Banu Arbas"
            tier="2"
            owner="Hero.lord_3_17"
            culture="Culture.aserai"
            super_faction="Kingdom.banu_arbas"
-           banner_key="11.101.75.4345.4345.776.777.1.0.0.425.1.0.500.500.768.829.0.0.359.400.1.0.162.162.776.944.0.0.0.411.1.0.260.260.775.640.0.0.0" />
+           banner_key="11.101.57.4345.4345.776.777.1.0.0.425.1.0.500.500.768.829.0.0.359.400.1.0.162.162.776.944.0.0.0.411.1.0.260.260.775.640.0.0.0" />
   <Faction id="clan_aserai_6"
            name="{=l6JtB97p}Banu Atij"
            tier="1"
            owner="Hero.lord_3_18"
            culture="Culture.aserai"
            super_faction="Kingdom.banu_atij"
-           banner_key="11.101.75.4345.4345.776.777.1.0.0.222.1.0.507.507.765.765.0.0.359.411.1.0.256.256.762.782.0.0.0" />
+           banner_key="11.101.117.4345.4345.776.777.1.0.0.222.1.0.507.507.765.765.0.0.359.411.1.0.256.256.762.782.0.0.0" />
   <Faction id="clan_aserai_7"
            name="{=Aft8nsgn}Banu Sarmal"
            tier="2"
@@ -723,7 +723,7 @@
            owner="Hero.lord_4_3"
            culture="Culture.vlandia"
            super_faction="Kingdom.dey_tihr"
-           banner_key="11.71.14.4922.4922.580.740.1.0.0.419.15.0.511.511.767.776.0.0.0.512.15.0.125.125.656.894.0.0.0.512.15.0.125.125.888.653.0.0.0.512.15.0.125.125.881.899.0.0.0.512.15.0.125.125.650.652.0.0.0" />
+           banner_key="11.71.61.4922.4922.580.740.1.0.0.419.15.0.511.511.767.776.0.0.0.512.15.0.125.125.656.894.0.0.0.512.15.0.125.125.888.653.0.0.0.512.15.0.125.125.881.899.0.0.0.512.15.0.125.125.650.652.0.0.0" />
   <!--
 	Patriarch - Rendric.	Wealthy, entitled clan. Duc de Berry	
 	Rendric of the House of Tir is wealthy and notoriously avaricious, known for squeezing every last denar out of his subjects while neglecting his duty to defend them. His son meanwhile is considered depraved, and is almost as greatly feared as the Sturgian and Battanian raiders who he allows the rampage through the northlands as he pursues his desires. Rendric's daughter Liena is considered the saving grace of the family, who has donned armor and taken on the responsibilities that her male relatives neglect.
@@ -737,7 +737,7 @@
            owner="Hero.lord_4_6"
            culture="Culture.vlandia"
            super_faction="Kingdom.dey_arromanc"
-           banner_key="11.71.14.4922.4922.580.740.1.0.0.424.15.0.503.503.764.723.0.0.0.220.15.0.184.184.869.905.0.0.347.220.15.0.184.184.655.910.0.0.3" />
+           banner_key="11.71.48.4922.4922.580.740.1.0.0.424.15.0.503.503.764.723.0.0.0.220.15.0.184.184.869.905.0.0.347.220.15.0.184.184.655.910.0.0.3" />
   <!--
 	Calatild was her father's only child, and was named heir of the House of Arromanc in contrary to normal Vlandian custom. The claim to her lands staked by Ingalther of Cortain has allowed her to rally her relatives to her banner, overcoming any objections they might have to a female liege. 
 	Patriarch - Untheric, consort of queen
@@ -752,7 +752,7 @@
            owner="Hero.lord_4_16"
            culture="Culture.vlandia"
            super_faction="Kingdom.dey_cortain"
-           banner_key="11.71.14.4922.4922.580.740.1.0.0.207.15.0.303.270.884.894.0.1.332.207.15.0.270.270.655.894.0.0.28.220.15.0.462.462.748.680.0.0.0.512.15.0.126.126.768.900.0.0.1" />
+           banner_key="11.71.55.4922.4922.580.740.1.0.0.207.15.0.303.270.884.894.0.1.332.207.15.0.270.270.655.894.0.0.28.220.15.0.462.462.748.680.0.0.0.512.15.0.126.126.768.900.0.0.1" />
   <!--
 	Fourth clan
 	Ingalther, lord of the House of Cortain, seized his estate from a much older illegitimate half-brother. His ambition and sense of entitlement is extreme even by Vlandian standards. He has a dynastic claim to Arromanc lands, and has been pressing Derther to disinherit Calatild and award her lands to him. Derthert has of course refused, as this would both start a war with the Arromancs and make Ingalther twice as powerful as the king, but Ingalther nonetheless greatly resents him for it. Ingalther keeps close ties with the Free Company, a notoriously rapacious band of mercenaries whose seaside castle lies near his domains.	
@@ -764,7 +764,7 @@
            owner="Hero.lord_4_21"
            culture="Culture.vlandia"
            super_faction="Kingdom.dey_gunric"
-           banner_key="11.71.14.4922.4922.580.740.1.0.0.159.15.0.503.503.772.731.0.0.0.418.15.0.300.300.762.896.0.0.0" />
+           banner_key="11.71.82.4922.4922.580.740.1.0.0.336.15.0.512.512.772.756.0.0.0.424.15.0.245.245.922.787.0.0.0.424.15.0.245.245.630.787.0.0.0.424.15.0.245.245.776.943.0.0.0" />
   <Faction id="clan_vlandia_6"
            name="{=vbLAA0RF}dey Valant"
            tier="2"
@@ -778,7 +778,7 @@
            owner="Hero.lord_4_23"
            culture="Culture.vlandia"
            super_faction="Kingdom.dey_fortes"
-           banner_key="11.71.14.4922.4922.580.740.1.0.0.141.15.0.473.473.768.814.0.0.0.301.15.0.416.416.752.923.0.0.90.301.15.0.416.416.756.625.0.0.269" />
+           banner_key="11.71.91.4922.4922.580.740.1.0.0.141.15.0.473.473.768.814.0.0.0.301.15.0.416.416.752.923.0.0.90.301.15.0.416.416.756.625.0.0.269" />
   <Faction id="clan_vlandia_8"
            name="{=9NWQNInC}dey Molarn"
            tier="2"
@@ -817,7 +817,7 @@
            owner="Hero.lord_5_3"
            culture="Culture.battania"
            super_faction="Kingdom.fen_derngil"
-           banner_key="11.101.75.4345.4345.776.777.1.0.0.412.39.0.508.508.774.799.0.0.180" />
+           banner_key="11.101.126.4345.4345.776.777.1.0.0.412.39.0.508.508.774.799.0.0.180" />
   <!--		
 		Patriarch: Ergeon, 5_3 whitebeard, arthur-type. Submits to Gruffendoc because they realize latter's capacity to lead
 		Active queen: Mywin 5_4, holds her own lands and fights in her own right
@@ -831,7 +831,7 @@
            owner="Hero.lord_5_5"
            culture="Culture.battania"
            super_faction="Kingdom.fen_uvain"
-           banner_key="11.101.75.4345.4345.776.777.1.0.0.427.39.0.261.261.770.869.0.0.359.133.39.0.380.380.769.696.0.0.0" />
+           banner_key="11.101.120.4345.4345.776.777.1.0.0.427.39.0.261.261.770.869.0.0.359.133.39.0.380.380.769.696.0.0.0" />
   <!--		
 	Fen Uvain
 		Old house, know they lack the charisma to conquer, prefer to plot to maintain their independence
@@ -849,14 +849,14 @@
            owner="Hero.lord_5_14"
            culture="Culture.battania"
            super_faction="Kingdom.fen_penraic"
-           banner_key="11.101.75.4345.4345.776.777.1.0.0.456.39.0.343.343.770.869.0.0.179.132.39.0.438.438.771.764.0.0.0" />
+           banner_key="11.101.89.4345.4345.776.777.1.0.0.456.39.0.343.343.770.869.0.0.179.132.39.0.438.438.771.764.0.0.0" />
   <Faction id="clan_battania_5"
            name="{=ObBvcDhJ}fen Giall"
            tier="2"
            owner="Hero.lord_5_16"
            culture="Culture.battania"
            super_faction="Kingdom.fen_giall"
-           banner_key="11.101.75.4345.4345.776.777.1.0.0.535.39.0.189.178.822.905.0.1.0.535.39.0.178.178.700.904.0.0.0.151.39.0.425.425.773.717.0.0.0" />
+           banner_key="11.101.18.4345.4345.776.777.1.0.0.535.39.0.189.178.822.905.0.1.0.535.39.0.178.178.700.904.0.0.0.151.39.0.425.425.773.717.0.0.0" />
   <Faction id="clan_battania_6"
            name="{=qoLWSdRE}fen Eingal"
            tier="2"
@@ -899,7 +899,7 @@
            owner="Hero.lord_6_4"
            culture="Culture.khuzait"
            super_faction="Kingdom.khergit"
-           banner_key="11.25.10.4345.4345.780.802.1.0.0.128.11.0.385.385.778.762.0.0.0" />
+           banner_key="11.25.72.4345.4345.780.802.1.0.0.128.11.0.385.385.778.762.0.0.0" />
   <!--
 		The Khergit, or Roan Horses, were one of the first peoples to be subjugated by Urkhun. Although assimilated into his confederacy by force, they proved themselves some of his most valuable warriors, and were rewarded with extensive lands in his new conquests. War however took a heavy toll of the clan's males, and ten years ago the Arkit made a bid for their territories. Mesui, sister of a slain noyan and part of a long tradition of steppe warrior-women, led the Khergit's counter-attack. She continues to rule a clan nervous about its brush with extinction, and resentful of the Urkhunait for doing little to help them.
 		Matriarch - female, widow, very conscious of her clan's brush with extinction
@@ -914,7 +914,7 @@
            owner="Hero.lord_6_5"
            culture="Culture.khuzait"
            super_faction="Kingdom.arkit"
-           banner_key="11.25.10.4345.4345.780.802.1.0.0.446.11.0.438.438.782.762.0.0.269.503.11.0.164.164.770.768.0.0.315.509.11.0.133.133.783.916.0.0.315.503.11.0.95.95.964.761.0.0.315.503.11.0.95.95.597.764.0.0.315.509.11.0.133.133.778.614.0.0.315" />
+           banner_key="11.25.13.4345.4345.780.802.1.0.0.446.11.0.438.438.782.762.0.0.269.503.11.0.164.164.770.768.0.0.315.509.11.0.133.133.783.916.0.0.315.503.11.0.95.95.964.761.0.0.315.503.11.0.95.95.597.764.0.0.315.509.11.0.133.133.778.614.0.0.315" />
   <!--
 		The Arkit, the Children of the Sky, were formerly the richest and most prestigious of the tribes in the Khuzait homelands, of which Urkhun and his followers were at first merely a humble offshoot. They followed the Khuzait hordes to the west but are not happy about living in the shadow of a less ancient lineage. Their patriarch, the noyan Monchug, models himself on Tulag but is somewhat less competent.
 		Embittered elder tribe
@@ -933,14 +933,14 @@
            owner="Hero.lord_6_16"
            culture="Culture.khuzait"
            super_faction="Kingdom.tigrit"
-           banner_key="11.25.10.4345.4345.780.802.1.0.0.503.11.0.164.164.910.900.0.0.0.314.11.0.508.508.777.763.0.0.0.503.11.0.164.164.630.900.0.0.0" />
+           banner_key="11.25.75.4345.4345.780.802.1.0.0.503.11.0.164.164.910.900.0.0.0.314.11.0.508.508.777.763.0.0.0.503.11.0.164.164.630.900.0.0.0" />
   <Faction id="clan_khuzait_5"
            name="{=gXeF1yKn}Harfit"
            tier="2"
            owner="Hero.lord_6_17"
            culture="Culture.khuzait"
            super_faction="Kingdom.harfit"
-           banner_key="11.25.10.4345.4345.780.802.1.0.0.427.11.0.438.438.767.854.0.0.359.503.11.0.211.211.762.809.0.0.358.218.11.0.243.243.752.625.0.0.0" />
+           banner_key="11.25.128.4345.4345.780.802.1.0.0.427.11.0.438.438.767.854.0.0.359.503.11.0.211.211.762.809.0.0.358.218.11.0.243.243.752.625.0.0.0" />
   <Faction id="clan_khuzait_6"
            name="{=kbGk2so8}Baltait"
            tier="2"
@@ -984,7 +984,7 @@
            owner="Hero.lord_2_3"
            culture="Culture.sturgia"
            super_faction="Kingdom.kuloving"
-           banner_key="11.71.12.4922.4922.580.740.1.0.0.332.111.0.471.471.759.727.0.0.0.406.111.0.202.202.773.950.0.0.1" />
+           banner_key="11.71.119.4922.4922.580.740.1.0.0.332.111.0.471.471.759.727.0.0.0.406.111.0.202.202.773.950.0.0.1" />
   <!--		
 		Old Believers, ties to Jomsvikings
 		Patriarch - Olek old, ferocious	
@@ -997,7 +997,7 @@
            owner="Hero.lord_2_5"
            culture="Culture.sturgia"
            super_faction="Kingdom.vagiroving"
-           banner_key="11.71.12.4922.4922.580.740.1.0.0.347.111.0.509.509.769.706.0.0.0.302.111.0.408.408.682.920.0.0.60.302.111.0.408.408.871.898.0.0.309" />
+           banner_key="11.71.69.4922.4922.580.740.1.0.0.347.111.0.509.509.769.706.0.0.0.302.111.0.408.408.682.920.0.0.60.302.111.0.408.408.871.898.0.0.309" />
   <!--		
 		Based on Icelandish explorers - independent forging outward
 	
@@ -1012,21 +1012,21 @@
            owner="Hero.lord_2_16"
            culture="Culture.sturgia"
            super_faction="Kingdom.ormidoving"
-           banner_key="11.71.12.4922.4922.580.740.1.0.0.307.111.0.416.416.781.835.0.0.180.307.111.0.416.416.793.720.0.0.0.442.111.0.310.310.673.844.0.0.180.442.111.0.310.310.901.718.0.0.0" />
+           banner_key="11.71.149.4922.4922.580.740.1.0.0.307.111.0.416.416.781.835.0.0.180.307.111.0.416.416.793.720.0.0.0.442.111.0.310.310.673.844.0.0.180.442.111.0.310.310.901.718.0.0.0" />
   <Faction id="clan_sturgia_5"
            name="{=s0AVQCbJ}Togaroving"
            tier="3"
            owner="Hero.lord_2_17"
            culture="Culture.sturgia"
            super_faction="Kingdom.togaroving"
-           banner_key="11.71.12.4922.4922.580.740.1.0.0.456.111.0.504.504.765.698.0.0.359.444.111.0.116.116.759.923.0.0.179.454.111.0.116.116.884.922.0.0.179.454.111.0.116.116.644.921.0.0.359" />
+           banner_key="11.71.101.4922.4922.580.740.1.0.0.456.111.0.504.504.765.698.0.0.359.444.111.0.116.116.759.923.0.0.179.454.111.0.116.116.884.922.0.0.179.454.111.0.116.116.644.921.0.0.359" />
   <Faction id="clan_sturgia_6"
            name="{=EnZHNc2k}Isyaroving"
            tier="2"
            owner="Hero.lord_2_18"
            culture="Culture.sturgia"
            super_faction="Kingdom.isyaroving"
-           banner_key="11.71.12.4922.4922.580.740.1.0.0.441.111.0.511.511.770.767.0.0.359" />
+           banner_key="11.71.113.4922.4922.580.740.1.0.0.441.111.0.511.511.770.767.0.0.359" />
   <Faction id="clan_sturgia_7"
            name="{=xw0eTkkb}Vezhoving"
            tier="2"
