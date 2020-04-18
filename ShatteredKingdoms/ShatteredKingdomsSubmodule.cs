@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using NLog.Targets;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Actions;
 using TaleWorlds.Core;
-using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
-using TaleWorlds.SaveSystem;
 
 namespace ShatteredKingdoms
 {
@@ -34,54 +30,46 @@ namespace ShatteredKingdoms
 			return "ShatteredKingdomsLog.txt";
 		}
 
-		//public override void OnNewGameCreated(Game game, object initializerObject)
-		//{
-		//	base.OnNewGameCreated(game, initializerObject);
+		public override void OnNewGameCreated(Game game, object initializerObject)
+		{
+			base.OnNewGameCreated(game, initializerObject);
 
-			//try
-			//{
-			//	//Log.Info("OnNewGameCreated");
+			try
+			{
+				foreach (Clan clan in Campaign.Current.Clans)
+				{
+					var isOnlyCastle = true;
+					for (int z = 0; z < clan.Fortifications.Count; z++)
+					{
+						if (clan.Fortifications[z].IsTown)
+						{
+							isOnlyCastle = false;
+						}
+					}
 
-			//	if (!(Campaign.Current.Clans is MBReadOnlyList<Clan> clans))
-			//		return;
+					if (!isOnlyCastle &&!clan.Leader.Equals(clan.Kingdom.Leader)) 
+					{
+						foreach (Kingdom kingdom in Campaign.Current.Kingdoms)
+						{
+							var kingdomName = kingdom
+								.GetName().ToLower().ToString().Replace('_', ' ');
 
-			//	if (!(Campaign.Current.Kingdoms is MBReadOnlyList<Kingdom> kingdoms))
-			//		return;
+							var clanName = clan.GetName().ToLower().ToString();
 
-			//	foreach(Clan clan in clans)
-			//	{
-			//		var isOnlyCastle = true;
-			//		for (int z = 0; z < clan.Fortifications.Count; z++)
-			//		{
-			//			if (clan.Fortifications[z].IsTown)
-			//			{
-			//				isOnlyCastle = false;
-			//			}
-			//		}
-
-			//		if (!isOnlyCastle && !clan.Leader.Equals(clan.Kingdom.Leader))
-			//		{
-			//			foreach(Kingdom kingdom in kingdoms)
-			//			{
-			//				var kingdomName = kingdom
-			//					.GetName().ToLower().ToString().Replace('_', ' ');
-
-			//				var clanName = clan.GetName().ToLower().ToString();
-
-			//				if (kingdomName.Equals(clanName))
-			//				{
-			//					ChangeKingdomAction
-			//						.ApplyByJoinToKingdom(clan, kingdom, true);
-			//				}
-			//			}
-			//		}
-			//	}
-			//}
-			//catch (Exception e)
-			//{
-			//	Log.Info(e);
-			//}
-		//}
+							if (kingdomName.Equals(clanName))
+							{
+								ChangeKingdomAction
+									.ApplyByJoinToKingdom(clan, kingdom, true);
+							}
+						}
+					}
+				}
+			}
+			catch (Exception e)
+			{
+				Log.Info(e);
+			}
+		}
 
 		protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
 		{
