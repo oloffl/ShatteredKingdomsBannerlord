@@ -74,41 +74,17 @@ namespace ShatteredKingdoms
 
 						Hero newLeader = CreateRandomLeader(clan);
 
-						if (newLeader == null)
-							continue;
-
 						// Create Army
 
-						MobileParty rebel = null;
-						
-						try
-						{
-							Log.Info("New leader " + newLeader.CharacterObject.GetName() +
-							         " will siege " + settlementTarget.Name + " " + settlementTarget.OwnerClan.Id.ToString());
-
-							rebel = FillPartyWithTroopsAndInit(newLeader, settlementTarget);
-						}
-						catch (Exception e)
-						{
-							Log.Info("Exception when trying to create new Army");
-							Log.Info(e);
-						}
-
-						if (rebel == null)
-							continue;
+						MobileParty rebel = FillPartyWithTroopsAndInit(newLeader, settlementTarget);
 
 						// Create Clan
 
 						Clan newClan = InitializeClan(newLeader);
 
-						if (newClan == null)
-							continue;
-
 						// Create Kingdom
 
-						Kingdom newKingdom = InitializeKingdom(newLeader, 
-							settlementTarget.BoundVillages[0].Name.ToString(),
-							kingdom.Name.ToString());
+						Kingdom newKingdom = InitializeKingdom(newLeader);
 
 						if (newKingdom == null)
 							continue;
@@ -130,6 +106,9 @@ namespace ShatteredKingdoms
 							Log.Info("Exception when trying to siege settlement");
 							Log.Info(e);
 						}
+
+						Log.Info("New leader " + newLeader.CharacterObject.GetName() +
+						         " will siege " + settlementTarget.Name + " " + settlementTarget.OwnerClan.Id.ToString());
 
 						return;
 					}
@@ -245,6 +224,7 @@ namespace ShatteredKingdoms
 			}
 			catch (Exception e)
 			{
+				Log.Info("Exception when trying to create new Army");
 				Log.Info(e);
 			}
 
@@ -287,13 +267,13 @@ namespace ShatteredKingdoms
 			return newClan;
 		}
 
-		private Kingdom InitializeKingdom(Hero leader, string origin, string opponent)
+		private Kingdom InitializeKingdom(Hero leader)
 		{
 			Kingdom newKingdom = MBObjectManager.Instance.CreateObject<Kingdom>();
 
 			TextObject name = new TextObject(
 				"{=!}{CLAN_NAME}",
-				(Dictionary<string, TextObject>)null);
+				null);
 
 			name.SetTextVariable("CLAN_NAME", leader.Name);
 
