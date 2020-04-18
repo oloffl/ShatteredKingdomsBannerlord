@@ -1,8 +1,12 @@
-﻿using TaleWorlds.CampaignSystem;
+﻿using System;
+using System.Collections.Generic;
+using NLog.Targets;
+using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Actions;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
+using TaleWorlds.SaveSystem;
 
 namespace ShatteredKingdoms
 {
@@ -30,50 +34,54 @@ namespace ShatteredKingdoms
 			return "ShatteredKingdomsLog.txt";
 		}
 
-		public override void OnNewGameCreated(Game game, object initializerObject)
-		{
-			base.OnNewGameCreated(game, initializerObject);
+		//public override void OnNewGameCreated(Game game, object initializerObject)
+		//{
+		//	base.OnNewGameCreated(game, initializerObject);
 
-			//Log.Info("OnNewGameCreated");
+			//try
+			//{
+			//	//Log.Info("OnNewGameCreated");
 
-			if (!(Campaign.Current.Clans is MBReadOnlyList<Clan> clans))
-				return;
+			//	if (!(Campaign.Current.Clans is MBReadOnlyList<Clan> clans))
+			//		return;
 
-			if (!(Campaign.Current.Kingdoms is MBReadOnlyList<Kingdom> kingdoms))
-				return;
+			//	if (!(Campaign.Current.Kingdoms is MBReadOnlyList<Kingdom> kingdoms))
+			//		return;
 
-			for (int i = 0; i < clans.Count; i++)
-			{
-				var isOnlyCastle = true;
-				for (int z = 0; z < clans[i].Fortifications.Count; z++)
-				{
-					if (clans[i].Fortifications[z].IsTown)
-					{
-						isOnlyCastle = false;
-					}
-				}
+			//	foreach(Clan clan in clans)
+			//	{
+			//		var isOnlyCastle = true;
+			//		for (int z = 0; z < clan.Fortifications.Count; z++)
+			//		{
+			//			if (clan.Fortifications[z].IsTown)
+			//			{
+			//				isOnlyCastle = false;
+			//			}
+			//		}
 
-				if (!isOnlyCastle && !clans[i].Leader.Equals(clans[i].Kingdom.Leader)) //
-				{
-					for (int y = 0; y < kingdoms.Count; y++)
-					{
-						var kingdomName = kingdoms[y].GetName().ToLower().ToString().Replace('_', ' ');
-						var clanName = clans[i].GetName().ToLower().ToString();
+			//		if (!isOnlyCastle && !clan.Leader.Equals(clan.Kingdom.Leader))
+			//		{
+			//			foreach(Kingdom kingdom in kingdoms)
+			//			{
+			//				var kingdomName = kingdom
+			//					.GetName().ToLower().ToString().Replace('_', ' ');
 
-						if (kingdomName.Equals(clanName))
-						{
-							//Log.Info(i + ": Clan " + clans[i].GetName() + " joining " +
-							//         kingdoms[y]);
-							ChangeKingdomAction.ApplyByJoinToKingdom(clans[i], kingdoms[y], true);
-						}
-					}
-				}
-				else
-				{
-					//Log.Info(clans[i] + " has only castle or is kingdom leader, skipping");
-				}
-			}
-		}
+			//				var clanName = clan.GetName().ToLower().ToString();
+
+			//				if (kingdomName.Equals(clanName))
+			//				{
+			//					ChangeKingdomAction
+			//						.ApplyByJoinToKingdom(clan, kingdom, true);
+			//				}
+			//			}
+			//		}
+			//	}
+			//}
+			//catch (Exception e)
+			//{
+			//	Log.Info(e);
+			//}
+		//}
 
 		protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
 		{
@@ -81,7 +89,12 @@ namespace ShatteredKingdoms
 			{
 				return;
 			}
-			//Log.Info("OnGameStart");
+
+			Log.Info("OnGameStart");
+
+			CampaignGameStarter initializer = (CampaignGameStarter) gameStarterObject;
+
+			initializer.AddBehavior(new ShatterBehavior());
 		}
 	}
 }

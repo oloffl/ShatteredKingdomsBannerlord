@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Kingdoms>
   <!--kingdom factions-->
-  <Kingdom id="osticos" 
+
+  <Kingdom id="empire" 
     owner="Hero.lord_1_1" 
     banner_key="11.4.4.4345.4345.768.768.1.0.0.163.0.5.512.512.769.764.1.0.0" 
     primary_banner_color="0xff793191" 
@@ -14,9 +15,9 @@
     culture="Culture.empire" 
     settlement_banner_mesh="encounter_flag_a" 
     flag_mesh="info_screen_flags_b" 
-    name="{=ZwE6Sci3}NE Osticos" 
-    short_name="{=ZwE6Sci3}NE Osticos" 
-    title="{=ZwE6Sci3}NE Osticos" 
+    name="{=NF627oiX}Northern Empire" 
+    short_name="{=nsDj8Qxl}northern Empire" 
+    title="{=NF627oiX}Northern Empire" 
     ruler_title="{=8pjMAqOg}Senate" 
     text="{=fE5U9ApA}The Calradian Empire is not a monarchy. The Calradians insist on this. The emperor, formerly just a military commander, may have taken on most other affairs of state as well. Rather than be elected every few years by the Senate, he may now rule for life and often be succeeded by his son. The popular assemblies that once decided key policies may have withered away, and the Senate, a gathering of landowners, may have far less power than it did in centuries pass. But it is not a monarchy, because it is absolutely forbidden for Calradians to be ruled by a king. The Empire is what happens when a league of city-states conquers a continent. A community once led by free farmers with relatively equal wealth now has vast gaps between the rich and the poor. Institutions designed to prevent one man from becoming a tyrant come into conflict with the necessities of unending warfare, which require unified command. Without any smooth means of succession, the death of an emperor has always been a potential crisis. Usually, the emperor nominated an heir, the senate ratified his choice, and the people (meaning the army) acclaimed it. But this did not always happen smoothly, and then the succession was settled on the battlefield. The current conflict, which broke out when the late Emperor Arenicos was assassinated, is the latest of these imperial civil war.">
     <relationships>
@@ -30,12 +31,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.dolentor" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.chonis" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.phalentes" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -62,7 +57,7 @@
     title="{=m8pxX7Et}NE Argoros" 
     ruler_title="{=8pjMAqOg}Senate">
     <relationships>
-      <relationship kingdom="Kingdom.osticos" 
+      <relationship kingdom="Kingdom.empire" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.neretzes" 
@@ -72,12 +67,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.dolentor" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.chonis" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.phalentes" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -104,7 +93,7 @@
     title="{=KQo4UbeW}NE Neretzes" 
     ruler_title="{=8pjMAqOg}Senate">
     <relationships>
-      <relationship kingdom="Kingdom.osticos" 
+      <relationship kingdom="Kingdom.empire" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.argoros" 
@@ -114,12 +103,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.dolentor" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.chonis" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.phalentes" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -146,7 +129,7 @@
     title="{=2A5c7kV8}NE Impestores" 
     ruler_title="{=8pjMAqOg}Senate">
     <relationships>
-      <relationship kingdom="Kingdom.osticos" 
+      <relationship kingdom="Kingdom.empire" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.argoros" 
@@ -156,12 +139,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.dolentor" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.chonis" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.phalentes" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -188,7 +165,7 @@
     title="{=QurDf8gx}NE Dolentor" 
     ruler_title="{=8pjMAqOg}Senate">
     <relationships>
-      <relationship kingdom="Kingdom.osticos" 
+      <relationship kingdom="Kingdom.empire" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.argoros" 
@@ -198,96 +175,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.impestores" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.chonis" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.phalentes" 
-        value="-1" 
-        isAtWar="true" />
-    </relationships>
-    <policies>
-      <policy name="{=8pjMAqOg}Senate" />
-      <policy name="{=iWyvNzBB}Property Protections" />
-    </policies>
-  </Kingdom>
-  <Kingdom id="chonis" 
-    owner="Hero.lord_1_51" 
-    banner_key="11.71.4.4345.4345.776.777.1.0.0.320.5.0.487.487.767.815.0.0.0.302.5.0.423.423.758.681.0.0.0" 
-    primary_banner_color="0xff793191" 
-    secondary_banner_color="0xffFCDE90" 
-    label_color="FF850C6D" 
-    color="FF4E3A55" 
-    color2="FFDE9953" 
-    alternative_color="FFffffff" 
-    alternative_color2="FF660653" 
-    culture="Culture.empire" 
-    settlement_banner_mesh="encounter_flag_a" 
-    flag_mesh="info_screen_flags_b" 
-    name="{=jhxn26Af}NE Chonis" 
-    short_name="{=jhxn26Af}NE Chonis" 
-    title="{=jhxn26Af}NE Chonis" 
-    ruler_title="{=8pjMAqOg}Senate">
-    <relationships>
-      <relationship kingdom="Kingdom.osticos" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.argoros" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.neretzes" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.impestores" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dolentor" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.phalentes" 
-        value="-1" 
-        isAtWar="true" />
-    </relationships>
-    <policies>
-      <policy name="{=8pjMAqOg}Senate" />
-      <policy name="{=iWyvNzBB}Property Protections" />
-    </policies>
-  </Kingdom>
-  <Kingdom id="phalentes" 
-    owner="Hero.lord_1_58" 
-    banner_key="11.71.4.4345.4345.776.777.1.0.0.423.5.0.506.506.772.774.0.0.0.418.5.0.362.362.780.774.0.0.0" 
-    primary_banner_color="0xff793191" 
-    secondary_banner_color="0xffFCDE90" 
-    label_color="FF850C6D" 
-    color="FF4E3A55" 
-    color2="FFDE9953" 
-    alternative_color="FFffffff" 
-    alternative_color2="FF660653" 
-    culture="Culture.empire" 
-    settlement_banner_mesh="encounter_flag_a" 
-    flag_mesh="info_screen_flags_b" 
-    name="{=T6kAGcbp}NE Phalentes" 
-    short_name="{=T6kAGcbp}NE Phalentes" 
-    title="{=T6kAGcbp}NE Phalentes" 
-    ruler_title="{=8pjMAqOg}Senate">
-    <relationships>
-      <relationship kingdom="Kingdom.osticos" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.argoros" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.neretzes" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.impestores" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dolentor" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.chonis" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -297,7 +184,13 @@
     </policies>
   </Kingdom>
 
-  <Kingdom id="comnos" 
+
+
+
+
+
+
+  <Kingdom id="empire_w" 
     owner="Hero.lord_1_7" 
     banner_key="11.8.8.4345.4345.768.768.1.0.0.164.0.9.512.512.769.764.1.0.0" 
     primary_banner_color="0xff591645" 
@@ -310,9 +203,9 @@
     culture="Culture.empire" 
     settlement_banner_mesh="encounter_flag_a" 
     flag_mesh="info_screen_flags_a" 
-    name="{=hk4XzXjR}WE Comnos" 
-    short_name="{=hk4XzXjR}WE Comnos" 
-    title="{=hk4XzXjR}WE Comnos">
+    name="{=yG3YUySN}Western Empire" 
+    short_name="{=ZEmH0MwL}western Empire" 
+    title="{=yG3YUySN}Western Empire">
     <relationships>
       <relationship kingdom="Kingdom.varros" 
         value="-1" 
@@ -324,15 +217,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.lonalion" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.sorados" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.corenios" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.maneolis" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -358,7 +242,7 @@
     short_name="{=CUhr9CbK}WE Varros" 
     title="{=CUhr9CbK}WE Varros">
     <relationships>
-      <relationship kingdom="Kingdom.comnos" 
+      <relationship kingdom="Kingdom.empire_w" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.dionicos" 
@@ -368,15 +252,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.lonalion" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.sorados" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.corenios" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.maneolis" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -402,25 +277,16 @@
     short_name="{=TYoRexU3}WE Dionicos" 
     title="{=TYoRexU3}WE Dionicos">
     <relationships>
-      <relationship kingdom="Kingdom.comnos" 
+      <relationship kingdom="Kingdom.varros" 
         value="-1" 
         isAtWar="true" />
-      <relationship kingdom="Kingdom.varros" 
+      <relationship kingdom="Kingdom.empire_w" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.elaches" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.lonalion" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.sorados" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.corenios" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.maneolis" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -446,25 +312,16 @@
     short_name="{=SQNz6hLV}WE Elaches" 
     title="{=SQNz6hLV}WE Elaches">
     <relationships>
-      <relationship kingdom="Kingdom.comnos" 
-        value="-1" 
-        isAtWar="true" />
       <relationship kingdom="Kingdom.varros" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.dionicos" 
         value="-1" 
         isAtWar="true" />
+      <relationship kingdom="Kingdom.empire_w" 
+        value="-1" 
+        isAtWar="true" />
       <relationship kingdom="Kingdom.lonalion" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.sorados" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.corenios" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.maneolis" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -490,9 +347,6 @@
     short_name="{=JWJym3fh}WE Lonalion" 
     title="{=JWJym3fh}WE Lonalion">
     <relationships>
-      <relationship kingdom="Kingdom.comnos" 
-        value="-1" 
-        isAtWar="true" />
       <relationship kingdom="Kingdom.varros" 
         value="-1" 
         isAtWar="true" />
@@ -502,145 +356,7 @@
       <relationship kingdom="Kingdom.elaches" 
         value="-1" 
         isAtWar="true" />
-      <relationship kingdom="Kingdom.sorados" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.corenios" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.maneolis" 
-        value="-1" 
-        isAtWar="true" />
-    </relationships>
-    <policies>
-      <policy name="{=8pjMAqOg}Senate" />
-      <policy name="{=IaCpmuL5}Land Reform" />
-    </policies>
-  </Kingdom>
-  <Kingdom id="sorados" 
-    owner="Hero.lord_1_52" 
-    banner_key="11.71.4.4922.4922.776.777.1.0.0.336.5.0.486.486.761.813.0.0.0.340.5.0.279.279.763.566.0.0.0" 
-    primary_banner_color="0xff591645" 
-    secondary_banner_color="0xffFFAD54" 
-    label_color="FFDB8330" 
-    color="FF9E5072" 
-    color2="FFDE9953" 
-    alternative_color="FF1F1D1F" 
-    alternative_color2="FFc28446" 
-    culture="Culture.empire" 
-    settlement_banner_mesh="encounter_flag_a" 
-    flag_mesh="info_screen_flags_a" 
-    name="{=726EuSok}WE Sorados" 
-    short_name="{=726EuSok}WE Sorados" 
-    title="{=726EuSok}WE Sorados">
-    <relationships>
-      <relationship kingdom="Kingdom.comnos" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.varros" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dionicos" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.elaches" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.lonalion" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.corenios" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.maneolis" 
-        value="-1" 
-        isAtWar="true" />
-    </relationships>
-    <policies>
-      <policy name="{=8pjMAqOg}Senate" />
-      <policy name="{=IaCpmuL5}Land Reform" />
-    </policies>
-  </Kingdom>
-  <Kingdom id="corenios" 
-    owner="Hero.lord_1_53" 
-    banner_key="11.71.4.4922.4922.776.777.1.0.0.423.5.0.486.486.762.760.0.0.1.340.5.0.393.393.765.739.0.0.0" 
-    primary_banner_color="0xff591645" 
-    secondary_banner_color="0xffFFAD54" 
-    label_color="FFDB8330" 
-    color="FF9E5072" 
-    color2="FFDE9953" 
-    alternative_color="FF1F1D1F" 
-    alternative_color2="FFc28446" 
-    culture="Culture.empire" 
-    settlement_banner_mesh="encounter_flag_a" 
-    flag_mesh="info_screen_flags_a" 
-    name="{=rV6e6nQL}WE Corenios" 
-    short_name="{=rV6e6nQL}WE Corenios" 
-    title="{=rV6e6nQL}WE Corenios">
-    <relationships>
-      <relationship kingdom="Kingdom.comnos" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.varros" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dionicos" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.elaches" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.lonalion" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.sorados" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.maneolis" 
-        value="-1" 
-        isAtWar="true" />
-    </relationships>
-    <policies>
-      <policy name="{=8pjMAqOg}Senate" />
-      <policy name="{=IaCpmuL5}Land Reform" />
-    </policies>
-  </Kingdom>
-  <Kingdom id="maneolis" 
-    owner="Hero.lord_1_71" 
-    banner_key="11.71.4.4922.4922.776.777.1.0.0.419.5.0.503.503.770.775.0.0.0.335.5.0.143.143.878.652.0.0.325.335.5.0.143.143.654.657.0.0.42.335.5.0.143.143.656.892.0.0.134.335.5.0.143.143.875.892.0.0.214" 
-    primary_banner_color="0xff591645" 
-    secondary_banner_color="0xffFFAD54" 
-    label_color="FFDB8330" 
-    color="FF9E5072" 
-    color2="FFDE9953" 
-    alternative_color="FF1F1D1F" 
-    alternative_color2="FFc28446" 
-    culture="Culture.empire" 
-    settlement_banner_mesh="encounter_flag_a" 
-    flag_mesh="info_screen_flags_a" 
-    name="{=FkV6CaSB}WE Maneolis" 
-    short_name="{=FkV6CaSB}WE Maneolis" 
-    title="{=FkV6CaSB}WE Maneolis">
-    <relationships>
-      <relationship kingdom="Kingdom.comnos" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.varros" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dionicos" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.elaches" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.lonalion" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.sorados" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.corenios" 
+      <relationship kingdom="Kingdom.empire_w" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -650,7 +366,11 @@
     </policies>
   </Kingdom>
 
-  <Kingdom id="pethros" 
+
+
+
+
+  <Kingdom id="empire_s" 
     owner="Hero.lord_1_14" 
     banner_key="11.45.6.4345.4345.768.768.1.0.0.162.0.7.512.512.769.764.1.0.0" 
     primary_banner_color="0xff382188" 
@@ -663,9 +383,9 @@
     culture="Culture.empire" 
     settlement_banner_mesh="encounter_flag_a" 
     flag_mesh="info_screen_flags_b" 
-    name="{=yPW8cKtf}SE Pethros" 
-    short_name="{=yPW8cKtf}SE Pethros" 
-    title="{=yPW8cKtf}SE Pethros">
+    name="{=frBQ9mbP}Southern Empire" 
+    short_name="{=GbnlN6na}southern Empire" 
+    title="{=frBQ9mbP}Southern Empire">
     <relationships>
       <relationship kingdom="Kingdom.leonipardes" 
         value="-1" 
@@ -680,12 +400,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.vizartos" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.avlonos" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.prienicos" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -711,7 +425,7 @@
     short_name="{=hzMYDXF2}SE Leonipardes" 
     title="{=hzMYDXF2}SE Leonipardes">
     <relationships>
-      <relationship kingdom="Kingdom.pethros" 
+      <relationship kingdom="Kingdom.empire_s" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.mestricaros" 
@@ -724,12 +438,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.vizartos" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.avlonos" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.prienicos" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -755,7 +463,7 @@
     short_name="{=GZXLA6xY}SE Mestricaros" 
     title="{=GZXLA6xY}SE Mestricaros">
     <relationships>
-      <relationship kingdom="Kingdom.pethros" 
+      <relationship kingdom="Kingdom.empire_s" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.leonipardes" 
@@ -768,12 +476,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.vizartos" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.avlonos" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.prienicos" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -799,7 +501,7 @@
     short_name="{=F39rWYWq}SE Hongeros" 
     title="{=F39rWYWq}SE Hongeros">
     <relationships>
-      <relationship kingdom="Kingdom.pethros" 
+      <relationship kingdom="Kingdom.empire_s" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.leonipardes" 
@@ -812,12 +514,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.vizartos" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.avlonos" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.prienicos" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -843,7 +539,7 @@
     short_name="{=KsB6C83Y}SE Julios" 
     title="{=KsB6C83Y}SE Julios">
     <relationships>
-      <relationship kingdom="Kingdom.pethros" 
+      <relationship kingdom="Kingdom.empire_s" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.leonipardes" 
@@ -856,12 +552,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.vizartos" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.avlonos" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.prienicos" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -887,7 +577,7 @@
     short_name="{=4pFQSa9b}SE Vizartos" 
     title="{=4pFQSa9b}SE Vizartos">
     <relationships>
-      <relationship kingdom="Kingdom.pethros" 
+      <relationship kingdom="Kingdom.empire_s" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.leonipardes" 
@@ -900,100 +590,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.julios" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.avlonos" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.prienicos" 
-        value="-1" 
-        isAtWar="true" />
-    </relationships>
-    <policies>
-      <policy name="{=8pjMAqOg}Senate" />
-      <policy name="{=DrnZOsjo}Dynastic Succession" />
-    </policies>
-  </Kingdom>
-  <Kingdom id="avlonos" 
-    owner="Hero.lord_1_55" 
-    banner_key="11.71.4.4922.4922.776.777.1.0.0.510.5.0.507.55.761.987.0.0.0.459.5.0.507.507.761.750.0.0.0.510.5.0.507.171.762.959.0.0.0.510.5.0.507.171.758.584.0.0.0.510.5.0.507.55.758.553.0.0.0" 
-    primary_banner_color="0xff382188" 
-    secondary_banner_color="0xffDEA940" 
-    label_color="FF6d62b5" 
-    color="FF9382D0" 
-    color2="FFDE9953" 
-    alternative_color="FFF4CA14" 
-    alternative_color2="FF6d62b5" 
-    culture="Culture.empire" 
-    settlement_banner_mesh="encounter_flag_a" 
-    flag_mesh="info_screen_flags_b" 
-    name="{=w6u2MubL}SE Avlonos" 
-    short_name="{=w6u2MubL}SE Avlonos" 
-    title="{=w6u2MubL}SE Avlonos">
-    <relationships>
-      <relationship kingdom="Kingdom.pethros" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.leonipardes" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.mestricaros" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.hongeros" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.julios" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.vizartos" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.prienicos" 
-        value="-1" 
-        isAtWar="true" />
-    </relationships>
-    <policies>
-      <policy name="{=8pjMAqOg}Senate" />
-      <policy name="{=DrnZOsjo}Dynastic Succession" />
-    </policies>
-  </Kingdom>
-  <Kingdom id="prienicos" 
-    owner="Hero.lord_1_72" 
-    banner_key="11.71.4.4922.4922.776.777.1.0.0.147.5.0.456.456.767.765.0.0.0" 
-    primary_banner_color="0xff382188" 
-    secondary_banner_color="0xffDEA940" 
-    label_color="FF6d62b5" 
-    color="FF9382D0" 
-    color2="FFDE9953" 
-    alternative_color="FFF4CA14" 
-    alternative_color2="FF6d62b5" 
-    culture="Culture.empire" 
-    settlement_banner_mesh="encounter_flag_a" 
-    flag_mesh="info_screen_flags_b" 
-    name="{=U3K2tamR}SE Prienicos" 
-    short_name="{=U3K2tamR}SE Prienicos" 
-    title="{=U3K2tamR}SE Prienicos">
-    <relationships>
-      <relationship kingdom="Kingdom.pethros" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.leonipardes" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.mestricaros" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.hongeros" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.julios" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.vizartos" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.avlonos" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -1003,7 +599,14 @@
     </policies>
   </Kingdom>
 
-  <Kingdom id="gundaroving" 
+
+
+
+
+
+
+
+  <Kingdom id="sturgia" 
     owner="Hero.lord_2_1" 
     banner_key="11.45.12.4345.4345.768.768.1.0.0.462.0.13.512.512.769.764.1.0.0" 
     primary_banner_color="0xff224277" 
@@ -1016,9 +619,9 @@
     culture="Culture.sturgia" 
     settlement_banner_mesh="encounter_flag_b" 
     flag_mesh="info_screen_flags_c" 
-    name="{=AhF4osb5}Sturgia Gundaroving" 
-    short_name="{=LJ2t24r7}Gundaroving Sturgians" 
-    title="{=s8q5zQKe}Principality of Gundaroving Sturgia" 
+    name="{=PjO7oY16}Sturgia" 
+    short_name="{=C4qjBqLO}Sturgians" 
+    title="{=iYCR3xuQ}Principality of Sturgia" 
     ruler_title="{=FmbgPGBL}Grand Prince" 
     text="{=bVihnRUu}The confederation of small kingdoms that is now the Principality of Sturgia came into being only a century ago. As boomtowns sprung up along the great rivers of the north, the local tribal leaders forged marriage pacts with Nords and other adventurers, hiring their swords to subdue their neighbors. Under pressure from the empire, they elected a prince to lead them in war, and eventually the princes became a hereditary office. But the idea of monarchy has never sat easily with the independence-minded boyars, and the potential for rebellion always lurks under the surface of Sturgian politics.">
     <relationships>
@@ -1035,12 +638,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.isyaroving" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.vezhoving" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.ubroving" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -1068,7 +665,7 @@
     ruler_title="{=FmbgPGBL}Grand Prince" 
     text="{=bVihnRUu}The confederation of small kingdoms that is now the Principality of Sturgia came into being only a century ago. As boomtowns sprung up along the great rivers of the north, the local tribal leaders forged marriage pacts with Nords and other adventurers, hiring their swords to subdue their neighbors. Under pressure from the empire, they elected a prince to lead them in war, and eventually the princes became a hereditary office. But the idea of monarchy has never sat easily with the independence-minded boyars, and the potential for rebellion always lurks under the surface of Sturgian politics.">
     <relationships>
-      <relationship kingdom="Kingdom.gundaroving" 
+      <relationship kingdom="Kingdom.sturgia" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.vagiroving" 
@@ -1081,12 +678,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.isyaroving" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.vezhoving" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.ubroving" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -1114,7 +705,7 @@
     ruler_title="{=FmbgPGBL}Grand Prince" 
     text="{=bVihnRUu}The confederation of small kingdoms that is now the Principality of Sturgia came into being only a century ago. As boomtowns sprung up along the great rivers of the north, the local tribal leaders forged marriage pacts with Nords and other adventurers, hiring their swords to subdue their neighbors. Under pressure from the empire, they elected a prince to lead them in war, and eventually the princes became a hereditary office. But the idea of monarchy has never sat easily with the independence-minded boyars, and the potential for rebellion always lurks under the surface of Sturgian politics.">
     <relationships>
-      <relationship kingdom="Kingdom.gundaroving" 
+      <relationship kingdom="Kingdom.sturgia" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.kuloving" 
@@ -1127,12 +718,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.isyaroving" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.vezhoving" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.ubroving" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -1160,7 +745,7 @@
     ruler_title="{=FmbgPGBL}Grand Prince" 
     text="{=bVihnRUu}The confederation of small kingdoms that is now the Principality of Sturgia came into being only a century ago. As boomtowns sprung up along the great rivers of the north, the local tribal leaders forged marriage pacts with Nords and other adventurers, hiring their swords to subdue their neighbors. Under pressure from the empire, they elected a prince to lead them in war, and eventually the princes became a hereditary office. But the idea of monarchy has never sat easily with the independence-minded boyars, and the potential for rebellion always lurks under the surface of Sturgian politics.">
     <relationships>
-      <relationship kingdom="Kingdom.gundaroving" 
+      <relationship kingdom="Kingdom.sturgia" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.kuloving" 
@@ -1173,12 +758,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.isyaroving" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.vezhoving" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.ubroving" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -1206,7 +785,7 @@
     ruler_title="{=FmbgPGBL}Grand Prince" 
     text="{=bVihnRUu}The confederation of small kingdoms that is now the Principality of Sturgia came into being only a century ago. As boomtowns sprung up along the great rivers of the north, the local tribal leaders forged marriage pacts with Nords and other adventurers, hiring their swords to subdue their neighbors. Under pressure from the empire, they elected a prince to lead them in war, and eventually the princes became a hereditary office. But the idea of monarchy has never sat easily with the independence-minded boyars, and the potential for rebellion always lurks under the surface of Sturgian politics.">
     <relationships>
-      <relationship kingdom="Kingdom.gundaroving" 
+      <relationship kingdom="Kingdom.sturgia" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.kuloving" 
@@ -1219,12 +798,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.isyaroving" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.vezhoving" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.ubroving" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -1252,7 +825,7 @@
     ruler_title="{=FmbgPGBL}Grand Prince" 
     text="{=bVihnRUu}The confederation of small kingdoms that is now the Principality of Sturgia came into being only a century ago. As boomtowns sprung up along the great rivers of the north, the local tribal leaders forged marriage pacts with Nords and other adventurers, hiring their swords to subdue their neighbors. Under pressure from the empire, they elected a prince to lead them in war, and eventually the princes became a hereditary office. But the idea of monarchy has never sat easily with the independence-minded boyars, and the potential for rebellion always lurks under the surface of Sturgian politics.">
     <relationships>
-      <relationship kingdom="Kingdom.gundaroving" 
+      <relationship kingdom="Kingdom.sturgia" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.kuloving" 
@@ -1265,104 +838,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.togaroving" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.vezhoving" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.ubroving" 
-        value="-1" 
-        isAtWar="true" />
-    </relationships>
-    <policies>
-      <policy name="{=EBCV0LcU}Lawspeakers" />
-      <policy name="{=sg4bbc7K}Deposition" />
-    </policies>
-  </Kingdom>
-  <Kingdom id="vezhoving" 
-    owner="Hero.lord_2_19" 
-    banner_key="11.71.12.4922.4922.580.740.1.0.0.421.111.0.502.502.785.754.0.0.359.451.111.0.128.128.762.771.0.0.359" 
-    primary_banner_color="0xff224277" 
-    secondary_banner_color="0xffCEDAE7" 
-    label_color="FF1856A1" 
-    color="FF1C2A50" 
-    color2="FF949CCC" 
-    alternative_color="FFFFFFFF" 
-    alternative_color2="FF2A4B78" 
-    culture="Culture.sturgia" 
-    settlement_banner_mesh="encounter_flag_b" 
-    flag_mesh="info_screen_flags_c" 
-    name="{=nApcTT76}Sturgia Vezhoving" 
-    short_name="{=fUxWbup2}Vezhoving Sturgians" 
-    title="{=cVjE6BEb}Principality of Vezhoving Sturgia" 
-    ruler_title="{=FmbgPGBL}Grand Prince" 
-    text="{=bVihnRUu}The confederation of small kingdoms that is now the Principality of Sturgia came into being only a century ago. As boomtowns sprung up along the great rivers of the north, the local tribal leaders forged marriage pacts with Nords and other adventurers, hiring their swords to subdue their neighbors. Under pressure from the empire, they elected a prince to lead them in war, and eventually the princes became a hereditary office. But the idea of monarchy has never sat easily with the independence-minded boyars, and the potential for rebellion always lurks under the surface of Sturgian politics.">
-    <relationships>
-      <relationship kingdom="Kingdom.gundaroving" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.kuloving" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.vagiroving" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.ormidoving" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.togaroving" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.isyaroving" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.ubroving" 
-        value="-1" 
-        isAtWar="true" />
-    </relationships>
-    <policies>
-      <policy name="{=EBCV0LcU}Lawspeakers" />
-      <policy name="{=sg4bbc7K}Deposition" />
-    </policies>
-  </Kingdom>
-  <Kingdom id="ubroving" 
-    owner="Hero.lord_2_20" 
-    banner_key="11.71.12.4922.4922.580.740.1.0.0.138.111.0.509.509.762.770.0.0.359" 
-    primary_banner_color="0xff224277" 
-    secondary_banner_color="0xffCEDAE7" 
-    label_color="FF1856A1" 
-    color="FF1C2A50" 
-    color2="FF949CCC" 
-    alternative_color="FFFFFFFF" 
-    alternative_color2="FF2A4B78" 
-    culture="Culture.sturgia" 
-    settlement_banner_mesh="encounter_flag_b" 
-    flag_mesh="info_screen_flags_c" 
-    name="{=7qxNF84w}Sturgia Ubroving" 
-    short_name="{=qDh8eJ2m}Ubroving Sturgians" 
-    title="{=NQh3qsCW}Principality of Ubroving Sturgia" 
-    ruler_title="{=FmbgPGBL}Grand Prince" 
-    text="{=bVihnRUu}The confederation of small kingdoms that is now the Principality of Sturgia came into being only a century ago. As boomtowns sprung up along the great rivers of the north, the local tribal leaders forged marriage pacts with Nords and other adventurers, hiring their swords to subdue their neighbors. Under pressure from the empire, they elected a prince to lead them in war, and eventually the princes became a hereditary office. But the idea of monarchy has never sat easily with the independence-minded boyars, and the potential for rebellion always lurks under the surface of Sturgian politics.">
-    <relationships>
-      <relationship kingdom="Kingdom.gundaroving" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.kuloving" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.vagiroving" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.ormidoving" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.togaroving" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.isyaroving" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.vezhoving" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -1372,7 +847,12 @@
     </policies>
   </Kingdom>
 
-  <Kingdom id="banu_hulyan" 
+
+
+
+
+
+  <Kingdom id="aserai" 
     owner="Hero.lord_3_1" 
     banner_key="11.45.0.4345.4345.768.768.1.0.0.463.0.1.512.512.769.764.1.0.0" 
     primary_banner_color="0xffB57A1E" 
@@ -1385,9 +865,9 @@
     culture="Culture.aserai" 
     settlement_banner_mesh="encounter_flag_c" 
     flag_mesh="info_screen_flags_a" 
-    name="{=cMz7KiKK}Aserai Banu Hulyan" 
-    short_name="{=cMz7KiKK}Aserai Banu Hulyan" 
-    title="{=x4kVQmSV}Sultanate of the Banu Hulyan" 
+    name="{=NaNMRPv4}Aserai" 
+    short_name="{=NaNMRPv4}Aserai" 
+    title="{=UsbwPmYb}Sultanate of the Aserai" 
     ruler_title="{=5djtBrHj}Sultan" 
     text="{=qggtvf8Y}The Empire always preferred not to send its legions into the army-devouring wastes of the Nahasa. Instead, it projected its power into this borderland by cultivating client rulers among the clans, who competed in an endless dance of power. Those clans that could secure a hold on the oases won an imperial subsidy to protect passing caravans and grew rich. Those who could not were pushed into the desert, left to raise goats and raid caravans until they could plot a comeback. Today, with the waning of the empire, the Aserai have agreed to form a confederacy under a sultan chosen from richest of the clans, the Banu Hulyan. But everyone knows that the dance has only temporarily been stopped, and at the right moment it will begin again.">
     <relationships>
@@ -1404,12 +884,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.banu_atij" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.banu_sarmal" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.banu_habbab" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -1437,7 +911,7 @@
     ruler_title="{=5djtBrHj}Sultan" 
     text="{=qggtvf8Y}The Empire always preferred not to send its legions into the army-devouring wastes of the Nahasa. Instead, it projected its power into this borderland by cultivating client rulers among the clans, who competed in an endless dance of power. Those clans that could secure a hold on the oases won an imperial subsidy to protect passing caravans and grew rich. Those who could not were pushed into the desert, left to raise goats and raid caravans until they could plot a comeback. Today, with the waning of the empire, the Aserai have agreed to form a confederacy under a sultan chosen from richest of the clans, the Banu Hulyan. But everyone knows that the dance has only temporarily been stopped, and at the right moment it will begin again.">
     <relationships>
-      <relationship kingdom="Kingdom.banu_hulyan" 
+      <relationship kingdom="Kingdom.aserai" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.banu_qild" 
@@ -1450,12 +924,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.banu_atij" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.banu_sarmal" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.banu_habbab" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -1483,7 +951,7 @@
     ruler_title="{=5djtBrHj}Sultan" 
     text="{=qggtvf8Y}The Empire always preferred not to send its legions into the army-devouring wastes of the Nahasa. Instead, it projected its power into this borderland by cultivating client rulers among the clans, who competed in an endless dance of power. Those clans that could secure a hold on the oases won an imperial subsidy to protect passing caravans and grew rich. Those who could not were pushed into the desert, left to raise goats and raid caravans until they could plot a comeback. Today, with the waning of the empire, the Aserai have agreed to form a confederacy under a sultan chosen from richest of the clans, the Banu Hulyan. But everyone knows that the dance has only temporarily been stopped, and at the right moment it will begin again.">
     <relationships>
-      <relationship kingdom="Kingdom.banu_hulyan" 
+      <relationship kingdom="Kingdom.aserai" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.banu_sarran" 
@@ -1496,12 +964,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.banu_atij" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.banu_sarmal" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.banu_habbab" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -1529,7 +991,7 @@
     ruler_title="{=5djtBrHj}Sultan" 
     text="{=qggtvf8Y}The Empire always preferred not to send its legions into the army-devouring wastes of the Nahasa. Instead, it projected its power into this borderland by cultivating client rulers among the clans, who competed in an endless dance of power. Those clans that could secure a hold on the oases won an imperial subsidy to protect passing caravans and grew rich. Those who could not were pushed into the desert, left to raise goats and raid caravans until they could plot a comeback. Today, with the waning of the empire, the Aserai have agreed to form a confederacy under a sultan chosen from richest of the clans, the Banu Hulyan. But everyone knows that the dance has only temporarily been stopped, and at the right moment it will begin again.">
     <relationships>
-      <relationship kingdom="Kingdom.banu_hulyan" 
+      <relationship kingdom="Kingdom.aserai" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.banu_sarran" 
@@ -1542,12 +1004,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.banu_atij" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.banu_sarmal" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.banu_habbab" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -1575,7 +1031,7 @@
     ruler_title="{=5djtBrHj}Sultan" 
     text="{=qggtvf8Y}The Empire always preferred not to send its legions into the army-devouring wastes of the Nahasa. Instead, it projected its power into this borderland by cultivating client rulers among the clans, who competed in an endless dance of power. Those clans that could secure a hold on the oases won an imperial subsidy to protect passing caravans and grew rich. Those who could not were pushed into the desert, left to raise goats and raid caravans until they could plot a comeback. Today, with the waning of the empire, the Aserai have agreed to form a confederacy under a sultan chosen from richest of the clans, the Banu Hulyan. But everyone knows that the dance has only temporarily been stopped, and at the right moment it will begin again.">
     <relationships>
-      <relationship kingdom="Kingdom.banu_hulyan" 
+      <relationship kingdom="Kingdom.aserai" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.banu_sarran" 
@@ -1588,12 +1044,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.banu_atij" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.banu_sarmal" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.banu_habbab" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -1621,7 +1071,7 @@
     ruler_title="{=5djtBrHj}Sultan" 
     text="{=qggtvf8Y}The Empire always preferred not to send its legions into the army-devouring wastes of the Nahasa. Instead, it projected its power into this borderland by cultivating client rulers among the clans, who competed in an endless dance of power. Those clans that could secure a hold on the oases won an imperial subsidy to protect passing caravans and grew rich. Those who could not were pushed into the desert, left to raise goats and raid caravans until they could plot a comeback. Today, with the waning of the empire, the Aserai have agreed to form a confederacy under a sultan chosen from richest of the clans, the Banu Hulyan. But everyone knows that the dance has only temporarily been stopped, and at the right moment it will begin again.">
     <relationships>
-      <relationship kingdom="Kingdom.banu_hulyan" 
+      <relationship kingdom="Kingdom.aserai" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.banu_sarran" 
@@ -1634,104 +1084,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.banu_arbas" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.banu_sarmal" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.banu_habbab" 
-        value="-1" 
-        isAtWar="true" />
-    </relationships>
-    <policies>
-      <policy name="{=IPrTwc28}Tribal Assembly" />
-      <policy name="{=dN5JCX8n}Council of Elders" />
-    </policies>
-  </Kingdom>
-  <Kingdom id="banu_sarmal" 
-    owner="Hero.lord_3_19" 
-    banner_key="11.101.75.4345.4345.776.777.1.0.0.426.1.0.508.508.767.717.0.0.268.421.1.0.425.425.748.850.0.0.89" 
-    primary_banner_color="0xffB57A1E" 
-    secondary_banner_color="0xff4E1A13" 
-    label_color="FFebce5e" 
-    color="FF965228" 
-    color2="FF4F2212" 
-    alternative_color="FF1F1D1F" 
-    alternative_color2="FFebce5e" 
-    culture="Culture.aserai" 
-    settlement_banner_mesh="encounter_flag_c" 
-    flag_mesh="info_screen_flags_a" 
-    name="{=RZ9iTTUe}Aserai Banu Sarmal" 
-    short_name="{=RZ9iTTUe}Aserai Banu Sarmal" 
-    title="{=WHo8syKy}Sultanate of the Banu Sarmal" 
-    ruler_title="{=5djtBrHj}Sultan" 
-    text="{=qggtvf8Y}The Empire always preferred not to send its legions into the army-devouring wastes of the Nahasa. Instead, it projected its power into this borderland by cultivating client rulers among the clans, who competed in an endless dance of power. Those clans that could secure a hold on the oases won an imperial subsidy to protect passing caravans and grew rich. Those who could not were pushed into the desert, left to raise goats and raid caravans until they could plot a comeback. Today, with the waning of the empire, the Aserai have agreed to form a confederacy under a sultan chosen from richest of the clans, the Banu Hulyan. But everyone knows that the dance has only temporarily been stopped, and at the right moment it will begin again.">
-    <relationships>
-      <relationship kingdom="Kingdom.banu_hulyan" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.banu_sarran" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.banu_qild" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.banu_qaraz" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.banu_arbas" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.banu_atij" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.banu_habbab" 
-        value="-1" 
-        isAtWar="true" />
-    </relationships>
-    <policies>
-      <policy name="{=IPrTwc28}Tribal Assembly" />
-      <policy name="{=dN5JCX8n}Council of Elders" />
-    </policies>
-  </Kingdom>
-  <Kingdom id="banu_habbab" 
-    owner="Hero.lord_3_20" 
-    banner_key="11.101.75.4345.4345.776.777.1.0.0.428.1.0.510.510.762.782.0.0.359.321.1.0.386.386.767.738.0.0.359.507.1.0.90.90.684.766.0.0.359.507.1.0.90.90.835.764.0.0.359" 
-    primary_banner_color="0xffB57A1E" 
-    secondary_banner_color="0xff4E1A13" 
-    label_color="FFebce5e" 
-    color="FF965228" 
-    color2="FF4F2212" 
-    alternative_color="FF1F1D1F" 
-    alternative_color2="FFebce5e" 
-    culture="Culture.aserai" 
-    settlement_banner_mesh="encounter_flag_c" 
-    flag_mesh="info_screen_flags_a" 
-    name="{=Jp9j6rdy}Aserai Banu Habbab" 
-    short_name="{=Jp9j6rdy}Aserai Banu Habbab" 
-    title="{=uMtkPUX7}Sultanate of the Banu Habbab" 
-    ruler_title="{=5djtBrHj}Sultan" 
-    text="{=qggtvf8Y}The Empire always preferred not to send its legions into the army-devouring wastes of the Nahasa. Instead, it projected its power into this borderland by cultivating client rulers among the clans, who competed in an endless dance of power. Those clans that could secure a hold on the oases won an imperial subsidy to protect passing caravans and grew rich. Those who could not were pushed into the desert, left to raise goats and raid caravans until they could plot a comeback. Today, with the waning of the empire, the Aserai have agreed to form a confederacy under a sultan chosen from richest of the clans, the Banu Hulyan. But everyone knows that the dance has only temporarily been stopped, and at the right moment it will begin again.">
-    <relationships>
-      <relationship kingdom="Kingdom.banu_hulyan" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.banu_sarran" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.banu_qild" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.banu_qaraz" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.banu_arbas" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.banu_atij" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.banu_sarmal" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -1741,7 +1093,12 @@
     </policies>
   </Kingdom>
 
-  <Kingdom id="dey_meroc" 
+
+
+
+
+
+  <Kingdom id="vlandia" 
     owner="Hero.lord_4_1" 
     banner_key="11.45.14.1536.1536.768.768.1.0.0.160.0.15.512.512.769.764.1.0.0" 
     primary_banner_color="0xff8D291A" 
@@ -1754,9 +1111,9 @@
     culture="Culture.vlandia" 
     settlement_banner_mesh="encounter_flag_d" 
     flag_mesh="info_screen_flags_c" 
-    name="{=W2vSLVUy}Vlandia dey Meroc" 
-    short_name="{=6EvzuHTD}dey Meroc Vlandians" 
-    title="{=MPfxxd7y}Kingdom of Vlandian dey Meroc" 
+    name="{=FjwRsf1C}Vlandia" 
+    short_name="{=8HMyTKF6}Vlandians" 
+    title="{=lAWwcO6b}Kingdom of Vlandia" 
     ruler_title="{=hwnp9abW}King" 
     text="{=IudGLWQZ}The Vlandian monarchy descends from Osric Iron-Arm, a warlord who seized the western coasts of the Empire and was recognized as king by the emperors as the price of peace. He in turn recognized his lieutenants as barons and counts, granting them suzerainty over their lands in exchange for rallying to his banner in war. Some Vlandian kings have sought to expand the powers of the kingship; others have allowed the barons to feud among themselves so long as the money and manpower was there when needed.">
     <relationships>
@@ -1776,15 +1133,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.dey_fortes" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_molarn" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_jelind" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_folcun" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -1812,7 +1160,7 @@
     ruler_title="{=hwnp9abW}King" 
     text="{=IudGLWQZ}The Vlandian monarchy descends from Osric Iron-Arm, a warlord who seized the western coasts of the Empire and was recognized as king by the emperors as the price of peace. He in turn recognized his lieutenants as barons and counts, granting them suzerainty over their lands in exchange for rallying to his banner in war. Some Vlandian kings have sought to expand the powers of the kingship; others have allowed the barons to feud among themselves so long as the money and manpower was there when needed.">
     <relationships>
-      <relationship kingdom="Kingdom.dey_meroc" 
+      <relationship kingdom="Kingdom.vlandia" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.dey_arromanc" 
@@ -1828,15 +1176,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.dey_fortes" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_molarn" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_jelind" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_folcun" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -1864,7 +1203,7 @@
     ruler_title="{=hwnp9abW}King" 
     text="{=IudGLWQZ}The Vlandian monarchy descends from Osric Iron-Arm, a warlord who seized the western coasts of the Empire and was recognized as king by the emperors as the price of peace. He in turn recognized his lieutenants as barons and counts, granting them suzerainty over their lands in exchange for rallying to his banner in war. Some Vlandian kings have sought to expand the powers of the kingship; others have allowed the barons to feud among themselves so long as the money and manpower was there when needed.">
     <relationships>
-      <relationship kingdom="Kingdom.dey_meroc" 
+      <relationship kingdom="Kingdom.vlandia" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.dey_tihr" 
@@ -1880,15 +1219,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.dey_fortes" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_molarn" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_jelind" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_folcun" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -1916,7 +1246,7 @@
     ruler_title="{=hwnp9abW}King" 
     text="{=IudGLWQZ}The Vlandian monarchy descends from Osric Iron-Arm, a warlord who seized the western coasts of the Empire and was recognized as king by the emperors as the price of peace. He in turn recognized his lieutenants as barons and counts, granting them suzerainty over their lands in exchange for rallying to his banner in war. Some Vlandian kings have sought to expand the powers of the kingship; others have allowed the barons to feud among themselves so long as the money and manpower was there when needed.">
     <relationships>
-      <relationship kingdom="Kingdom.dey_meroc" 
+      <relationship kingdom="Kingdom.vlandia" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.dey_tihr" 
@@ -1932,15 +1262,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.dey_fortes" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_molarn" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_jelind" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_folcun" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -1968,7 +1289,7 @@
     ruler_title="{=hwnp9abW}King" 
     text="{=IudGLWQZ}The Vlandian monarchy descends from Osric Iron-Arm, a warlord who seized the western coasts of the Empire and was recognized as king by the emperors as the price of peace. He in turn recognized his lieutenants as barons and counts, granting them suzerainty over their lands in exchange for rallying to his banner in war. Some Vlandian kings have sought to expand the powers of the kingship; others have allowed the barons to feud among themselves so long as the money and manpower was there when needed.">
     <relationships>
-      <relationship kingdom="Kingdom.dey_meroc" 
+      <relationship kingdom="Kingdom.vlandia" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.dey_tihr" 
@@ -1984,15 +1305,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.dey_fortes" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_molarn" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_jelind" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_folcun" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -2020,7 +1332,7 @@
     ruler_title="{=hwnp9abW}King" 
     text="{=IudGLWQZ}The Vlandian monarchy descends from Osric Iron-Arm, a warlord who seized the western coasts of the Empire and was recognized as king by the emperors as the price of peace. He in turn recognized his lieutenants as barons and counts, granting them suzerainty over their lands in exchange for rallying to his banner in war. Some Vlandian kings have sought to expand the powers of the kingship; others have allowed the barons to feud among themselves so long as the money and manpower was there when needed.">
     <relationships>
-      <relationship kingdom="Kingdom.dey_meroc" 
+      <relationship kingdom="Kingdom.vlandia" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.dey_tihr" 
@@ -2036,15 +1348,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.dey_fortes" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_molarn" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_jelind" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_folcun" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -2072,7 +1375,7 @@
     ruler_title="{=hwnp9abW}King" 
     text="{=IudGLWQZ}The Vlandian monarchy descends from Osric Iron-Arm, a warlord who seized the western coasts of the Empire and was recognized as king by the emperors as the price of peace. He in turn recognized his lieutenants as barons and counts, granting them suzerainty over their lands in exchange for rallying to his banner in war. Some Vlandian kings have sought to expand the powers of the kingship; others have allowed the barons to feud among themselves so long as the money and manpower was there when needed.">
     <relationships>
-      <relationship kingdom="Kingdom.dey_meroc" 
+      <relationship kingdom="Kingdom.vlandia" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.dey_tihr" 
@@ -2090,179 +1393,20 @@
       <relationship kingdom="Kingdom.dey_valant" 
         value="-1" 
         isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_molarn" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_jelind" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_folcun" 
-        value="-1" 
-        isAtWar="true" />
     </relationships>
     <policies>
       <policy name="{=DrnZOsjo}Dynastic Succession" />
       <policy name="{=GH6FLbYm}Privy Council" />
     </policies>
   </Kingdom>
-  <Kingdom id="dey_molarn" 
-    owner="Hero.lord_4_24" 
-    banner_key="11.71.14.4922.4922.580.740.1.0.0.315.15.0.462.462.801.800.0.0.307.315.15.0.462.462.751.787.0.0.49.424.15.0.221.221.774.696.0.0.1" 
-    primary_banner_color="0xff8D291A" 
-    secondary_banner_color="0xffF7BF46" 
-    label_color="ffB01301" 
-    color="FF5C2017" 
-    color2="FFECBA44" 
-    alternative_color="FFDBBA27" 
-    alternative_color2="ff910101" 
-    culture="Culture.vlandia" 
-    settlement_banner_mesh="encounter_flag_d" 
-    flag_mesh="info_screen_flags_c" 
-    name="{=98tB3kCn}Vlandian dey Molarn" 
-    short_name="{=j4Bky9pP}dey Molarn Vlandians" 
-    title="{=R8f4ouM9}Kingdom of Vlandian dey Molarn" 
-    ruler_title="{=hwnp9abW}King" 
-    text="{=IudGLWQZ}The Vlandian monarchy descends from Osric Iron-Arm, a warlord who seized the western coasts of the Empire and was recognized as king by the emperors as the price of peace. He in turn recognized his lieutenants as barons and counts, granting them suzerainty over their lands in exchange for rallying to his banner in war. Some Vlandian kings have sought to expand the powers of the kingship; others have allowed the barons to feud among themselves so long as the money and manpower was there when needed.">
-    <relationships>
-      <relationship kingdom="Kingdom.dey_meroc" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_tihr" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_arromanc" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_cortain" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_gunric" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_valant" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_fortes" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_jelind" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_folcun" 
-        value="-1" 
-        isAtWar="true" />
-    </relationships>
-    <policies>
-      <policy name="{=DrnZOsjo}Dynastic Succession" />
-      <policy name="{=GH6FLbYm}Privy Council" />
-    </policies>
-  </Kingdom>
-  <Kingdom id="dey_jelind" 
-    owner="Hero.lord_4_27" 
-    banner_key="11.71.14.4922.4922.580.740.1.0.0.335.15.0.509.509.762.754.0.0.1.336.15.0.190.190.767.721.0.0.1" 
-    primary_banner_color="0xff8D291A" 
-    secondary_banner_color="0xffF7BF46" 
-    label_color="ffB01301" 
-    color="FF5C2017" 
-    color2="FFECBA44" 
-    alternative_color="FFDBBA27" 
-    alternative_color2="ff910101" 
-    culture="Culture.vlandia" 
-    settlement_banner_mesh="encounter_flag_d" 
-    flag_mesh="info_screen_flags_c" 
-    name="{=ubwiiK8R}Vlandian dey Jelind" 
-    short_name="{=7NhE7pnd}dey Jelind Vlandians" 
-    title="{=5W5FmN9d}Kingdom of Vlandian dey Jelind" 
-    ruler_title="{=hwnp9abW}King" 
-    text="{=IudGLWQZ}The Vlandian monarchy descends from Osric Iron-Arm, a warlord who seized the western coasts of the Empire and was recognized as king by the emperors as the price of peace. He in turn recognized his lieutenants as barons and counts, granting them suzerainty over their lands in exchange for rallying to his banner in war. Some Vlandian kings have sought to expand the powers of the kingship; others have allowed the barons to feud among themselves so long as the money and manpower was there when needed.">
-    <relationships>
-      <relationship kingdom="Kingdom.dey_meroc" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_tihr" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_arromanc" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_cortain" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_gunric" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_valant" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_fortes" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_molarn" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_folcun" 
-        value="-1" 
-        isAtWar="true" />
-    </relationships>
-    <policies>
-      <policy name="{=DrnZOsjo}Dynastic Succession" />
-      <policy name="{=GH6FLbYm}Privy Council" />
-    </policies>
-  </Kingdom>
-  <Kingdom id="dey_folcun" 
-    owner="Hero.lord_4_28" 
-    banner_key="11.71.14.4922.4922.580.740.1.0.0.305.15.0.444.444.759.762.0.0.0.206.15.0.480.480.653.760.0.0.17.206.15.0.480.480.872.768.0.0.194" 
-    primary_banner_color="0xff8D291A" 
-    secondary_banner_color="0xffF7BF46" 
-    label_color="ffB01301" 
-    color="FF5C2017" 
-    color2="FFECBA44" 
-    alternative_color="FFDBBA27" 
-    alternative_color2="ff910101" 
-    culture="Culture.vlandia" 
-    settlement_banner_mesh="encounter_flag_d" 
-    flag_mesh="info_screen_flags_c" 
-    name="{=2J7QgFTi}Vlandian dey Folcun" 
-    short_name="{=n5xLhuS7}dey Folcun Vlandians" 
-    title="{=UWf46MA8}Kingdom of Vlandian dey Folcun" 
-    ruler_title="{=hwnp9abW}King" 
-    text="{=IudGLWQZ}The Vlandian monarchy descends from Osric Iron-Arm, a warlord who seized the western coasts of the Empire and was recognized as king by the emperors as the price of peace. He in turn recognized his lieutenants as barons and counts, granting them suzerainty over their lands in exchange for rallying to his banner in war. Some Vlandian kings have sought to expand the powers of the kingship; others have allowed the barons to feud among themselves so long as the money and manpower was there when needed.">
-    <relationships>
-      <relationship kingdom="Kingdom.dey_meroc" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_tihr" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_arromanc" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_cortain" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_gunric" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_valant" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_fortes" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_molarn" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.dey_jelind" 
-        value="-1" 
-        isAtWar="true" />
-    </relationships>
-    <policies>
-      <policy name="{=DrnZOsjo}Dynastic Succession" />
-      <policy name="{=GH6FLbYm}Privy Council" />
-    </policies>
-  </Kingdom>
+  
 
-  <Kingdom id="fen_gruffendoc" 
+
+
+
+
+
+  <Kingdom id="battania" 
     owner="Hero.lord_5_1" 
     banner_key="11.45.2.6296.6296.768.768.1.0.0.460.0.3.509.509.767.766.1.0.0" 
     primary_banner_color="0xff284E19" 
@@ -2275,9 +1419,9 @@
     culture="Culture.battania" 
     settlement_banner_mesh="encounter_flag_e" 
     flag_mesh="info_screen_flags_b" 
-    name="{=9tyj5mJR}fen Gruffendoc of Battania" 
-    short_name="{=82KZbzbH}fen Gruffendoc Battanians" 
-    title="{=eaJHccW7}High Kingdom of the Gruffendoc Battanians" 
+    name="{=0B27RrYJ}Battania" 
+    short_name="{=bgjiFSHZ}Battanians" 
+    title="{=qaDIU0XC}High Kingdom of the Battanians" 
     ruler_title="{=afvM7XpQ}High King" 
     text="{=ZjaaAoxd}From time immemorial there has been a High King of Battania, crowned with great ceremony on the sacred hill of Dunthanach. Ask any Battanian chieftain, however, whose ”kingdom” he lives in, and he will look around at his hall and his fields and his pastures, his flocks and his retainers, and answer ”Mine, of course.” Only lately, following the example of the Empire, have the High Kings made any effort to exert their authority. ”Such unruly cattle as my people require a strong herdsman's hand to steer them from the ravine and protect them from the wolf,” said one recent high king, just before he was betrayed by a jealous cousin and taken in chains to the nearest imperial outpost.">
     <relationships>
@@ -2291,12 +1435,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.fen_giall" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.fen_eingal" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.fen_morcar" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -2323,7 +1461,7 @@
     ruler_title="{=afvM7XpQ}High King" 
     text="{=ZjaaAoxd}From time immemorial there has been a High King of Battania, crowned with great ceremony on the sacred hill of Dunthanach. Ask any Battanian chieftain, however, whose ”kingdom” he lives in, and he will look around at his hall and his fields and his pastures, his flocks and his retainers, and answer ”Mine, of course.” Only lately, following the example of the Empire, have the High Kings made any effort to exert their authority. ”Such unruly cattle as my people require a strong herdsman's hand to steer them from the ravine and protect them from the wolf,” said one recent high king, just before he was betrayed by a jealous cousin and taken in chains to the nearest imperial outpost.">
     <relationships>
-      <relationship kingdom="Kingdom.fen_gruffendoc" 
+      <relationship kingdom="Kingdom.battania" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.fen_uvain" 
@@ -2333,12 +1471,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.fen_giall" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.fen_eingal" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.fen_morcar" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -2365,7 +1497,7 @@
     ruler_title="{=afvM7XpQ}High King" 
     text="{=ZjaaAoxd}From time immemorial there has been a High King of Battania, crowned with great ceremony on the sacred hill of Dunthanach. Ask any Battanian chieftain, however, whose ”kingdom” he lives in, and he will look around at his hall and his fields and his pastures, his flocks and his retainers, and answer ”Mine, of course.” Only lately, following the example of the Empire, have the High Kings made any effort to exert their authority. ”Such unruly cattle as my people require a strong herdsman's hand to steer them from the ravine and protect them from the wolf,” said one recent high king, just before he was betrayed by a jealous cousin and taken in chains to the nearest imperial outpost.">
     <relationships>
-      <relationship kingdom="Kingdom.fen_gruffendoc" 
+      <relationship kingdom="Kingdom.battania" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.fen_derngil" 
@@ -2375,12 +1507,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.fen_giall" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.fen_eingal" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.fen_morcar" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -2407,7 +1533,7 @@
     ruler_title="{=afvM7XpQ}High King" 
     text="{=ZjaaAoxd}From time immemorial there has been a High King of Battania, crowned with great ceremony on the sacred hill of Dunthanach. Ask any Battanian chieftain, however, whose ”kingdom” he lives in, and he will look around at his hall and his fields and his pastures, his flocks and his retainers, and answer ”Mine, of course.” Only lately, following the example of the Empire, have the High Kings made any effort to exert their authority. ”Such unruly cattle as my people require a strong herdsman's hand to steer them from the ravine and protect them from the wolf,” said one recent high king, just before he was betrayed by a jealous cousin and taken in chains to the nearest imperial outpost.">
     <relationships>
-      <relationship kingdom="Kingdom.fen_gruffendoc" 
+      <relationship kingdom="Kingdom.battania" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.fen_derngil" 
@@ -2417,12 +1543,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.fen_giall" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.fen_eingal" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.fen_morcar" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -2449,7 +1569,7 @@
     ruler_title="{=afvM7XpQ}High King" 
     text="{=ZjaaAoxd}From time immemorial there has been a High King of Battania, crowned with great ceremony on the sacred hill of Dunthanach. Ask any Battanian chieftain, however, whose ”kingdom” he lives in, and he will look around at his hall and his fields and his pastures, his flocks and his retainers, and answer ”Mine, of course.” Only lately, following the example of the Empire, have the High Kings made any effort to exert their authority. ”Such unruly cattle as my people require a strong herdsman's hand to steer them from the ravine and protect them from the wolf,” said one recent high king, just before he was betrayed by a jealous cousin and taken in chains to the nearest imperial outpost.">
     <relationships>
-      <relationship kingdom="Kingdom.fen_gruffendoc" 
+      <relationship kingdom="Kingdom.battania" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.fen_derngil" 
@@ -2461,103 +1581,18 @@
       <relationship kingdom="Kingdom.fen_penraic" 
         value="-1" 
         isAtWar="true" />
-      <relationship kingdom="Kingdom.fen_eingal" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.fen_morcar" 
-        value="-1" 
-        isAtWar="true" />
     </relationships>
     <policies>
       <policy name="{=EBCV0LcU}Lawspeakers" />
     </policies>
   </Kingdom>
-  <Kingdom id="fen_eingal" 
-    owner="Hero.lord_5_17" 
-    banner_key="11.101.75.4345.4345.776.777.1.0.0.504.39.0.101.101.768.959.0.0.180.503.39.0.177.177.773.768.0.0.0.406.39.0.509.509.779.754.0.0.0.504.39.0.101.101.770.574.0.0.0" 
-    primary_banner_color="0xff284E19" 
-    secondary_banner_color="0xffB4F0F1" 
-    label_color="FF55831A" 
-    color="FF2D3F1D" 
-    color2="FFBFCBB0" 
-    alternative_color="FFD69516" 
-    alternative_color2="FF55831A" 
-    culture="Culture.battania" 
-    settlement_banner_mesh="encounter_flag_e" 
-    flag_mesh="info_screen_flags_b" 
-    name="{=68T5LdkJ}fen Eingal of Battania" 
-    short_name="{=7C9zrS9f}fen Eingal Battanians" 
-    title="{=wy4U3Pai}High Kingdom of the Eingal Battanians" 
-    ruler_title="{=afvM7XpQ}High King" 
-    text="{=ZjaaAoxd}From time immemorial there has been a High King of Battania, crowned with great ceremony on the sacred hill of Dunthanach. Ask any Battanian chieftain, however, whose ”kingdom” he lives in, and he will look around at his hall and his fields and his pastures, his flocks and his retainers, and answer ”Mine, of course.” Only lately, following the example of the Empire, have the High Kings made any effort to exert their authority. ”Such unruly cattle as my people require a strong herdsman's hand to steer them from the ravine and protect them from the wolf,” said one recent high king, just before he was betrayed by a jealous cousin and taken in chains to the nearest imperial outpost.">
-    <relationships>
-      <relationship kingdom="Kingdom.fen_gruffendoc" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.fen_derngil" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.fen_uvain" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.fen_penraic" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.fen_giall" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.fen_morcar" 
-        value="-1" 
-        isAtWar="true" />
-    </relationships>
-    <policies>
-      <policy name="{=EBCV0LcU}Lawspeakers" />
-    </policies>
-  </Kingdom>
-  <Kingdom id="fen_morcar" 
-    owner="Hero.lord_5_15" 
-    banner_key="11.101.75.4345.4345.776.777.1.0.0.504.39.96.80.80.771.928.1.0.180.407.39.0.509.509.767.757.0.0.0" 
-    primary_banner_color="0xff284E19" 
-    secondary_banner_color="0xffB4F0F1" 
-    label_color="FF55831A" 
-    color="FF2D3F1D" 
-    color2="FFBFCBB0" 
-    alternative_color="FFD69516" 
-    alternative_color2="FF55831A" 
-    culture="Culture.battania" 
-    settlement_banner_mesh="encounter_flag_e" 
-    flag_mesh="info_screen_flags_b" 
-    name="{=wAznh4bw}fen Morcar of Battania" 
-    short_name="{=zHd7u2hA}fen Morcar Battanians" 
-    title="{=Q5L8WnoH}High Kingdom of the Morcar Battanians" 
-    ruler_title="{=afvM7XpQ}High King" 
-    text="{=ZjaaAoxd}From time immemorial there has been a High King of Battania, crowned with great ceremony on the sacred hill of Dunthanach. Ask any Battanian chieftain, however, whose ”kingdom” he lives in, and he will look around at his hall and his fields and his pastures, his flocks and his retainers, and answer ”Mine, of course.” Only lately, following the example of the Empire, have the High Kings made any effort to exert their authority. ”Such unruly cattle as my people require a strong herdsman's hand to steer them from the ravine and protect them from the wolf,” said one recent high king, just before he was betrayed by a jealous cousin and taken in chains to the nearest imperial outpost.">
-    <relationships>
-      <relationship kingdom="Kingdom.fen_gruffendoc" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.fen_derngil" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.fen_uvain" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.fen_penraic" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.fen_giall" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.fen_eingal" 
-        value="-1" 
-        isAtWar="true" />
-    </relationships>
-    <policies>
-      <policy name="{=EBCV0LcU}Lawspeakers" />
-    </policies>
-  </Kingdom>
+  
 
-  <Kingdom id="urkhunait" 
+
+
+
+
+  <Kingdom id="khuzait" 
     owner="Hero.lord_6_1" 
     banner_key="11.45.10.1536.1536.768.768.1.0.0.461.11.11.512.512.768.768.1.0.0" 
     primary_banner_color="0xff429081" 
@@ -2570,9 +1605,9 @@
     culture="Culture.khuzait" 
     settlement_banner_mesh="encounter_flag_f" 
     flag_mesh="info_screen_flags_b" 
-    name="{=rM75JG78}Khuzait Urkhunait" 
-    short_name="{=jdTAHqe5}Urkhunait Khuzaits" 
-    title="{=ZuwEtyG5}Khanate of Urkhunait" 
+    name="{=sZLd6VHi}Khuzait" 
+    short_name="{=vJOWy1QF}Khuzaits" 
+    title="{=bF7HmNGQ}Khuzait Khanate" 
     ruler_title="{=hwnp9abW}King" 
     text="{=fGNdo1BK}For centuries, the tribes in the vast steppe east of the empire were content to live as nomads, venturing into the imperial lands to raid and trade, and then returning to their ancestral freedom. Two generations ago, however, something happened far away to the east - a change in the winds, perhaps, or some terrible but distant conqueror - and the horse clans were set in motion. Urkhun the Khuzait led the clans nearest the empire into its eastern provinces, overrunning its eastern province and forming a khanate. He imposed discipline on the unruly clans, forcing them to ride to war on his command instead of simply when they wished. But after his death, the spirit of unity that he inspired was lost. His descendants still rule the khanate, but some of the other clans chaff under his authority, and others dream of becoming khan themselves.">
     <relationships>
@@ -2586,15 +1621,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.harfit" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.baltait" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.koltit" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.yanserit" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -2622,7 +1648,7 @@
     ruler_title="{=hwnp9abW}King" 
     text="{=fGNdo1BK}For centuries, the tribes in the vast steppe east of the empire were content to live as nomads, venturing into the imperial lands to raid and trade, and then returning to their ancestral freedom. Two generations ago, however, something happened far away to the east - a change in the winds, perhaps, or some terrible but distant conqueror - and the horse clans were set in motion. Urkhun the Khuzait led the clans nearest the empire into its eastern provinces, overrunning its eastern province and forming a khanate. He imposed discipline on the unruly clans, forcing them to ride to war on his command instead of simply when they wished. But after his death, the spirit of unity that he inspired was lost. His descendants still rule the khanate, but some of the other clans chaff under his authority, and others dream of becoming khan themselves.">
     <relationships>
-      <relationship kingdom="Kingdom.urkhunait" 
+      <relationship kingdom="Kingdom.khuzait" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.arkit" 
@@ -2632,15 +1658,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.harfit" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.baltait" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.koltit" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.yanserit" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -2668,7 +1685,7 @@
     ruler_title="{=hwnp9abW}King" 
     text="{=fGNdo1BK}For centuries, the tribes in the vast steppe east of the empire were content to live as nomads, venturing into the imperial lands to raid and trade, and then returning to their ancestral freedom. Two generations ago, however, something happened far away to the east - a change in the winds, perhaps, or some terrible but distant conqueror - and the horse clans were set in motion. Urkhun the Khuzait led the clans nearest the empire into its eastern provinces, overrunning its eastern province and forming a khanate. He imposed discipline on the unruly clans, forcing them to ride to war on his command instead of simply when they wished. But after his death, the spirit of unity that he inspired was lost. His descendants still rule the khanate, but some of the other clans chaff under his authority, and others dream of becoming khan themselves.">
     <relationships>
-      <relationship kingdom="Kingdom.urkhunait" 
+      <relationship kingdom="Kingdom.khuzait" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.khergit" 
@@ -2678,15 +1695,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.harfit" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.baltait" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.koltit" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.yanserit" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -2714,7 +1722,7 @@
     ruler_title="{=hwnp9abW}King" 
     text="{=fGNdo1BK}For centuries, the tribes in the vast steppe east of the empire were content to live as nomads, venturing into the imperial lands to raid and trade, and then returning to their ancestral freedom. Two generations ago, however, something happened far away to the east - a change in the winds, perhaps, or some terrible but distant conqueror - and the horse clans were set in motion. Urkhun the Khuzait led the clans nearest the empire into its eastern provinces, overrunning its eastern province and forming a khanate. He imposed discipline on the unruly clans, forcing them to ride to war on his command instead of simply when they wished. But after his death, the spirit of unity that he inspired was lost. His descendants still rule the khanate, but some of the other clans chaff under his authority, and others dream of becoming khan themselves.">
     <relationships>
-      <relationship kingdom="Kingdom.urkhunait" 
+      <relationship kingdom="Kingdom.khuzait" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.khergit" 
@@ -2724,15 +1732,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.harfit" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.baltait" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.koltit" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.yanserit" 
         value="-1" 
         isAtWar="true" />
     </relationships>
@@ -2760,7 +1759,7 @@
     ruler_title="{=hwnp9abW}King" 
     text="{=fGNdo1BK}For centuries, the tribes in the vast steppe east of the empire were content to live as nomads, venturing into the imperial lands to raid and trade, and then returning to their ancestral freedom. Two generations ago, however, something happened far away to the east - a change in the winds, perhaps, or some terrible but distant conqueror - and the horse clans were set in motion. Urkhun the Khuzait led the clans nearest the empire into its eastern provinces, overrunning its eastern province and forming a khanate. He imposed discipline on the unruly clans, forcing them to ride to war on his command instead of simply when they wished. But after his death, the spirit of unity that he inspired was lost. His descendants still rule the khanate, but some of the other clans chaff under his authority, and others dream of becoming khan themselves.">
     <relationships>
-      <relationship kingdom="Kingdom.urkhunait" 
+      <relationship kingdom="Kingdom.khuzait" 
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.khergit" 
@@ -2770,153 +1769,6 @@
         value="-1" 
         isAtWar="true" />
       <relationship kingdom="Kingdom.tigrit" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.baltait" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.koltit" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.yanserit" 
-        value="-1" 
-        isAtWar="true" />
-    </relationships>
-    <policies>
-      <policy name="{=IPrTwc28}Tribal Assembly" />
-      <policy name="{=rqHFujhr}Sacred Majesty" />
-    </policies>
-  </Kingdom>
-  <Kingdom id="baltait" 
-    owner="Hero.lord_6_18" 
-    banner_key="11.25.10.4345.4345.780.802.1.0.0.218.11.0.194.194.801.681.0.0.359.150.11.0.444.444.759.825.0.0.0" 
-    primary_banner_color="0xff429081" 
-    secondary_banner_color="0xffEFC990" 
-    label_color="FF7CC8EB" 
-    color="FF58888B" 
-    color2="FFCCBB89" 
-    alternative_color="FF787878" 
-    alternative_color2="FF6caecc" 
-    culture="Culture.khuzait" 
-    settlement_banner_mesh="encounter_flag_f" 
-    flag_mesh="info_screen_flags_b" 
-    name="{=QjgYBn8V}Khuzait Baltait" 
-    short_name="{=mve5EtSr}Baltait Khuzaits" 
-    title="{=imU4AL7s}Khanate of Baltait" 
-    ruler_title="{=hwnp9abW}King" 
-    text="{=fGNdo1BK}For centuries, the tribes in the vast steppe east of the empire were content to live as nomads, venturing into the imperial lands to raid and trade, and then returning to their ancestral freedom. Two generations ago, however, something happened far away to the east - a change in the winds, perhaps, or some terrible but distant conqueror - and the horse clans were set in motion. Urkhun the Khuzait led the clans nearest the empire into its eastern provinces, overrunning its eastern province and forming a khanate. He imposed discipline on the unruly clans, forcing them to ride to war on his command instead of simply when they wished. But after his death, the spirit of unity that he inspired was lost. His descendants still rule the khanate, but some of the other clans chaff under his authority, and others dream of becoming khan themselves.">
-    <relationships>
-      <relationship kingdom="Kingdom.urkhunait" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.khergit" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.arkit" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.tigrit" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.harfit" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.koltit" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.yanserit" 
-        value="-1" 
-        isAtWar="true" />
-    </relationships>
-    <policies>
-      <policy name="{=IPrTwc28}Tribal Assembly" />
-      <policy name="{=rqHFujhr}Sacred Majesty" />
-    </policies>
-  </Kingdom>
-  <Kingdom id="koltit" 
-    owner="Hero.lord_6_19" 
-    banner_key="11.25.10.4345.4345.780.802.1.0.0.117.11.0.375.375.835.859.0.0.179.508.11.0.119.119.632.908.0.0.0.117.11.0.371.371.691.699.0.0.0.508.11.0.117.117.910.652.0.0.0" 
-    primary_banner_color="0xff429081" 
-    secondary_banner_color="0xffEFC990" 
-    label_color="FF7CC8EB" 
-    color="FF58888B" 
-    color2="FFCCBB89" 
-    alternative_color="FF787878" 
-    alternative_color2="FF6caecc" 
-    culture="Culture.khuzait" 
-    settlement_banner_mesh="encounter_flag_f" 
-    flag_mesh="info_screen_flags_b" 
-    name="{=nM7fVSYB}Khuzait Koltit" 
-    short_name="{=5vAqVM2M}Koltit Khuzaits" 
-    title="{=GD2SR2ro}Khanate of Koltit" 
-    ruler_title="{=hwnp9abW}King" 
-    text="{=fGNdo1BK}For centuries, the tribes in the vast steppe east of the empire were content to live as nomads, venturing into the imperial lands to raid and trade, and then returning to their ancestral freedom. Two generations ago, however, something happened far away to the east - a change in the winds, perhaps, or some terrible but distant conqueror - and the horse clans were set in motion. Urkhun the Khuzait led the clans nearest the empire into its eastern provinces, overrunning its eastern province and forming a khanate. He imposed discipline on the unruly clans, forcing them to ride to war on his command instead of simply when they wished. But after his death, the spirit of unity that he inspired was lost. His descendants still rule the khanate, but some of the other clans chaff under his authority, and others dream of becoming khan themselves.">
-    <relationships>
-      <relationship kingdom="Kingdom.urkhunait" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.khergit" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.arkit" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.tigrit" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.harfit" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.baltait" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.yanserit" 
-        value="-1" 
-        isAtWar="true" />
-    </relationships>
-    <policies>
-      <policy name="{=IPrTwc28}Tribal Assembly" />
-      <policy name="{=rqHFujhr}Sacred Majesty" />
-    </policies>
-  </Kingdom>
-  <Kingdom id="yanserit" 
-    owner="Hero.lord_6_20" 
-    banner_key="11.25.10.4345.4345.780.802.1.0.0.427.11.0.288.288.710.775.0.0.273.427.11.0.288.288.816.763.0.0.93.503.11.0.201.201.763.768.0.0.0.510.11.0.288.201.898.621.0.0.0.510.11.0.288.201.902.915.0.0.0.510.11.0.288.201.646.915.0.0.0.510.11.0.288.201.638.621.0.0.0" 
-    primary_banner_color="0xff429081" 
-    secondary_banner_color="0xffEFC990" 
-    label_color="FF7CC8EB" 
-    color="FF58888B" 
-    color2="FFCCBB89" 
-    alternative_color="FF787878" 
-    alternative_color2="FF6caecc" 
-    culture="Culture.khuzait" 
-    settlement_banner_mesh="encounter_flag_f" 
-    flag_mesh="info_screen_flags_b" 
-    name="{=9oBqdWjs}Khuzait Yanserit" 
-    short_name="{=REgqi7L4}Yanserit Khuzaits" 
-    title="{=sJAFoFw2}Khanate of Yanserit" 
-    ruler_title="{=hwnp9abW}King" 
-    text="{=fGNdo1BK}For centuries, the tribes in the vast steppe east of the empire were content to live as nomads, venturing into the imperial lands to raid and trade, and then returning to their ancestral freedom. Two generations ago, however, something happened far away to the east - a change in the winds, perhaps, or some terrible but distant conqueror - and the horse clans were set in motion. Urkhun the Khuzait led the clans nearest the empire into its eastern provinces, overrunning its eastern province and forming a khanate. He imposed discipline on the unruly clans, forcing them to ride to war on his command instead of simply when they wished. But after his death, the spirit of unity that he inspired was lost. His descendants still rule the khanate, but some of the other clans chaff under his authority, and others dream of becoming khan themselves.">
-    <relationships>
-      <relationship kingdom="Kingdom.urkhunait" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.khergit" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.arkit" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.tigrit" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.harfit" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.baltait" 
-        value="-1" 
-        isAtWar="true" />
-      <relationship kingdom="Kingdom.koltit" 
         value="-1" 
         isAtWar="true" />
     </relationships>
