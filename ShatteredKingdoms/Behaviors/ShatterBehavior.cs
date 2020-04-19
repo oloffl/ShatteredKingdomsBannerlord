@@ -41,7 +41,7 @@ namespace ShatteredKingdoms.Behaviors
 					if (kingdom == null || kingdom.Leader.IsHumanPlayerCharacter)
 						continue;
 
-					if (kingdom.Fortifications.Count() < 8) // This will be adjusted once everything works
+					if (kingdom.Fortifications.Count() < 8)
 						continue;
 
 					int riskToRebel = kingdom.Fortifications.Count() * 3;
