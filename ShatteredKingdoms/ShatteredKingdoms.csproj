@@ -254,16 +254,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ShatterBehavior.cs" />
+    <Compile Include="Behaviors\ShatterBehavior.cs" />
     <Compile Include="ShatteredKingdomsSubmodule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ShatteredKingdoms\SubModule.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -7,7 +7,7 @@ using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.Localization;
 
-namespace ShatteredKingdoms
+namespace ShatteredKingdoms.Behaviors
 {
 	public class ShatterBehavior : CampaignBehaviorBase
 	{
@@ -20,7 +20,7 @@ namespace ShatteredKingdoms
 		{
 			try
 			{
-				CampaignEvents.DailyTickEvent.AddNonSerializedListener(this, ShatterRandomClan);
+				CampaignEvents.WeeklyTickEvent.AddNonSerializedListener(this, ShatterRandomClan);
 				CampaignEvents.MapEventEnded.AddNonSerializedListener(this, OnSiegeEnded);
 			}
 			catch
@@ -36,14 +36,19 @@ namespace ShatteredKingdoms
 		{
 			try
 			{
-				Log.Info("Daily tick");
-
 				foreach (Kingdom kingdom in Campaign.Current.Kingdoms)
 				{
 					if (kingdom == null || kingdom.Leader.IsHumanPlayerCharacter)
 						continue;
 
-					if (kingdom.Fortifications.Count() < 5) // This will be adjusted once everything works
+					if (kingdom.Fortifications.Count() < 8) // This will be adjusted once everything works
+						continue;
+
+					int riskToRebel = kingdom.Fortifications.Count() * 3;
+
+					int diceRoll = new Random().Next(0, 100);
+
+					if(diceRoll > riskToRebel)
 						continue;
 
 					foreach (Clan clan in kingdom.Clans)
@@ -57,35 +62,24 @@ namespace ShatteredKingdoms
 						if (clan.Fortifications.Count < 1)
 							continue;
 
-						Random rand = new Random();
-
 						Settlement settlementTarget = clan
-							.Fortifications[rand.Next(clan.Fortifications.Count() - 1)].Settlement;
+							.Fortifications[new Random().Next(clan.Fortifications.Count() - 1)].Settlement;
 
 						if (settlementTarget.IsUnderSiege || settlementTarget.IsTown || !settlementTarget.IsFortification)
 							continue;
 
-						// Create Leader
-
 						Hero newLeader = CreateRandomLeader(clan);
-
-						// Create Army
 
 						MobileParty rebelParty = FillPartyWithTroopsAndInit(newLeader, settlementTarget);
 
-						// Create Clan
+						InitializeClan(newLeader, settlementTarget.Name.ToString());
 
-						Clan newClan = InitializeClan(newLeader, settlementTarget.Name.ToString());
-
-						// Create Kingdom
-
-						Kingdom newKingdom = InitializeKingdom(newLeader);
-
-						// Siege settlement
-
+						InitializeKingdom(newLeader, settlementTarget);
+						
 						try
 						{
 							FactionManager.DeclareWar(newLeader.MapFaction, settlementTarget.MapFaction);
+							Campaign.Current.FactionManager.RegisterCampaignWar(newLeader.MapFaction, settlementTarget.MapFaction);
 							ChangeRelationAction.ApplyRelationChangeBetweenHeroes(newLeader, clan.Leader, -20, false);
 							ChangeRelationAction.ApplyRelationChangeBetweenHeroes(newLeader, clan.Kingdom.Leader, -20, false);
 
@@ -99,10 +93,7 @@ namespace ShatteredKingdoms
 							Log.Info(e);
 						}
 
-						Log.Info("New leader " + newLeader.CharacterObject.GetName() +
-								 " will siege " + settlementTarget.Name + " " + settlementTarget.OwnerClan.Id.ToString());
-
-						return;
+						Log.Info("Settlement " + settlementTarget.Name);
 					}
 				}
 			}
@@ -138,21 +129,11 @@ namespace ShatteredKingdoms
 				specialHero.AddSkillXp(SkillObject.GetSkill(9), rand.Next(80000, 500000)); // Tactics
 				specialHero.AddSkillXp(SkillObject.GetSkill(13), rand.Next(80000, 500000)); // Leadership
 				specialHero.AddSkillXp(SkillObject.GetSkill(15), rand.Next(80000, 500000)); // Steward
-				specialHero.AddSkillXp(SkillObject.GetSkill(17), rand.Next(0000, 500000)); // Engineering
+				specialHero.AddSkillXp(SkillObject.GetSkill(17), rand.Next(80000, 500000)); // Engineering
 
 				specialHero.ChangeState(Hero.CharacterStates.Active);
 
-				if (specialHero.MapFaction.Leader == null)
-				{
-					if (!specialHero.MapFaction.IsKingdomFaction)
-					{
-						(specialHero.MapFaction as Clan).SetLeader(specialHero);
-					}
-					else
-					{
-						(specialHero.MapFaction as Kingdom).RulingClan = clan;
-					}
-				}
+				specialHero.Gold += 10000;
 			}
 			catch (Exception e)
 			{
@@ -171,27 +152,29 @@ namespace ShatteredKingdoms
 			{
 				rebelParty.Initialize();
 
-				//rebelParty = MobileParty.Create(leader.CharacterObject.Name.ToString());
-
 				Random rand = new Random();
 
 				TroopRoster roster = new TroopRoster();
 
 				TroopRoster infantry = new TroopRoster();
-				infantry.FillMembersOfRoster(rand.Next(200, 250), leader.Culture.MeleeMilitiaTroop);
+				infantry.FillMembersOfRoster(rand.Next(150, 200), leader.Culture.MeleeMilitiaTroop);
 				roster.Add(infantry);
 
 				TroopRoster skilledInfantry = new TroopRoster();
-				skilledInfantry.FillMembersOfRoster(rand.Next(120, 150), leader.Culture.MeleeEliteMilitiaTroop);
+				skilledInfantry.FillMembersOfRoster(rand.Next(75, 110), leader.Culture.MeleeEliteMilitiaTroop);
 				roster.Add(skilledInfantry);
 
 				TroopRoster archers = new TroopRoster();
-				archers.FillMembersOfRoster(rand.Next(160, 200), leader.Culture.RangedMilitiaTroop);
+				archers.FillMembersOfRoster(rand.Next(120, 150), leader.Culture.RangedMilitiaTroop);
 				roster.Add(archers);
 
 				TroopRoster skilledArchers = new TroopRoster();
-				skilledArchers.FillMembersOfRoster(rand.Next(100, 140), leader.Culture.RangedEliteMilitiaTroop);
+				skilledArchers.FillMembersOfRoster(rand.Next(75, 110), leader.Culture.RangedEliteMilitiaTroop);
 				roster.Add(skilledArchers);
+				
+				TroopRoster eliteUnits = new TroopRoster();
+				eliteUnits.FillMembersOfRoster(rand.Next(40, 60), leader.Culture.EliteBasicTroop);
+				roster.Add(eliteUnits);
 
 				TroopRoster prisoners = new TroopRoster
 				{
@@ -202,6 +185,8 @@ namespace ShatteredKingdoms
 
 				rebelParty.MemberRoster.AddToCounts(leader.CharacterObject, 1, false, 0, 0, true, 0);
 
+				rebelParty.SetAsMainParty();
+
 				rebelParty.InitializeMobileParty(new TextObject(
 						leader.CharacterObject.GetName().ToString(), null),
 					roster,
@@ -210,11 +195,16 @@ namespace ShatteredKingdoms
 					0.0f,
 					0.0f);
 
-				// Adding food makes game unsavable
+				foreach (ItemObject item in ItemObject.All)
+				{
+					if (item.IsFood)
+					{
+						rebelParty.ItemRoster.AddToCounts(item, 150);
+						break;
+					}
+				}
 
-				//ItemObject itemObject = new ItemObject(ItemObject.All.First(i => i.IsFood));
-
-				//rebelParty.ItemRoster.AddToCounts(itemObject, 50);
+				
 
 				rebelParty.HomeSettlement = target;
 
@@ -262,7 +252,7 @@ namespace ShatteredKingdoms
 			return newClan;
 		}
 
-		private Kingdom InitializeKingdom(Hero leader)
+		private Kingdom InitializeKingdom(Hero leader, Settlement target)
 		{
 			Kingdom newKingdom = MBObjectManager.Instance.CreateObject<Kingdom>();
 
@@ -270,7 +260,7 @@ namespace ShatteredKingdoms
 				"{=!}{CLAN_NAME}",
 				null);
 
-			name.SetTextVariable("CLAN_NAME", leader.Name);
+			name.SetTextVariable("CLAN_NAME", leader.Name + " of " + target.Name);
 
 			newKingdom.InitializeKingdom(name,
 				name,
@@ -278,7 +268,7 @@ namespace ShatteredKingdoms
 				Banner.CreateRandomClanBanner(leader.StringId.GetDeterministicHashCode()),
 				0,
 				0,
-				new Vec2(0, 0));
+				new Vec2(target.GatePosition.X, target.GatePosition.Y));
 
 			ChangeKingdomAction.ApplyByJoinToKingdom(leader.Clan, newKingdom, false);
 			newKingdom.RulingClan = leader.Clan;

@@ -416,7 +416,7 @@
            owner="Hero.lord_1_3"
            culture="Culture.empire"
            super_faction="Kingdom.argoros"
-           banner_key="11.71.151.4922.4922.776.777.1.0.0.142.5.0.502.502.754.693.0.0.1.142.5.0.502.502.772.869.0.0.179" />
+           banner_key="11.71.151.4922.4922.776.777.1.0.0.142.8.0.502.502.754.693.0.0.1.142.8.8.502.502.772.869.0.0.179" />
   <!--
 	Sympathetic: O
 	Philosophical clan? Views Osticos as most likely to restore republic
@@ -831,7 +831,7 @@
            owner="Hero.lord_5_5"
            culture="Culture.battania"
            super_faction="Kingdom.fen_uvain"
-           banner_key="11.101.120.4345.4345.776.777.1.0.0.427.39.0.261.261.770.869.0.0.359.133.39.0.380.380.769.696.0.0.0" />
+           banner_key="11.101.120.4345.4345.776.777.1.0.0.427.123.123.261.261.770.869.0.0.359.133.123.123.380.380.769.696.0.0.0" />
   <!--		
 	Fen Uvain
 		Old house, know they lack the charisma to conquer, prefer to plot to maintain their independence
@@ -849,14 +849,14 @@
            owner="Hero.lord_5_14"
            culture="Culture.battania"
            super_faction="Kingdom.fen_penraic"
-           banner_key="11.101.89.4345.4345.776.777.1.0.0.456.39.0.343.343.770.869.0.0.179.132.39.0.438.438.771.764.0.0.0" />
+           banner_key="11.101.89.4345.4345.776.777.1.0.0.456.27.0.343.343.770.869.0.0.179.132.27.0.438.438.772.698.0.0.0" />
   <Faction id="clan_battania_5"
            name="{=ObBvcDhJ}fen Giall"
            tier="2"
            owner="Hero.lord_5_16"
            culture="Culture.battania"
            super_faction="Kingdom.fen_giall"
-           banner_key="11.101.18.4345.4345.776.777.1.0.0.535.39.0.189.178.822.905.0.1.0.535.39.0.178.178.700.904.0.0.0.151.39.0.425.425.773.717.0.0.0" />
+           banner_key="11.101.18.4345.4345.776.777.1.0.0.535.123.0.189.178.822.905.0.1.0.535.124.0.178.178.700.904.0.0.0.151.123.0.425.425.773.717.0.0.0" />
   <Faction id="clan_battania_6"
            name="{=qoLWSdRE}fen Eingal"
            tier="2"
@@ -914,7 +914,7 @@
            owner="Hero.lord_6_5"
            culture="Culture.khuzait"
            super_faction="Kingdom.arkit"
-           banner_key="11.25.13.4345.4345.780.802.1.0.0.446.11.0.438.438.782.762.0.0.269.503.11.0.164.164.770.768.0.0.315.509.11.0.133.133.783.916.0.0.315.503.11.0.95.95.964.761.0.0.315.503.11.0.95.95.597.764.0.0.315.509.11.0.133.133.778.614.0.0.315" />
+           banner_key="11.25.13.4345.4345.780.802.1.0.0.446.96.0.436.436.782.762.0.0.270.503.97.0.164.164.775.764.0.0.315.509.97.0.133.133.775.916.0.0.315.503.97.0.95.95.964.761.0.0.315.503.97.0.95.95.597.764.0.0.315.509.97.0.133.133.778.614.0.0.315" />
   <!--
 		The Arkit, the Children of the Sky, were formerly the richest and most prestigious of the tribes in the Khuzait homelands, of which Urkhun and his followers were at first merely a humble offshoot. They followed the Khuzait hordes to the west but are not happy about living in the shadow of a less ancient lineage. Their patriarch, the noyan Monchug, models himself on Tulag but is somewhat less competent.
 		Embittered elder tribe
@@ -933,14 +933,14 @@
            owner="Hero.lord_6_16"
            culture="Culture.khuzait"
            super_faction="Kingdom.tigrit"
-           banner_key="11.25.75.4345.4345.780.802.1.0.0.503.11.0.164.164.910.900.0.0.0.314.11.0.508.508.777.763.0.0.0.503.11.0.164.164.630.900.0.0.0" />
+           banner_key="11.25.75.4345.4345.780.802.1.0.0.503.100.0.164.164.910.900.0.0.0.314.100.0.508.508.777.763.0.0.0.503.100.0.164.164.630.900.0.0.0" />
   <Faction id="clan_khuzait_5"
            name="{=gXeF1yKn}Harfit"
            tier="2"
            owner="Hero.lord_6_17"
            culture="Culture.khuzait"
            super_faction="Kingdom.harfit"
-           banner_key="11.25.128.4345.4345.780.802.1.0.0.427.11.0.438.438.767.854.0.0.359.503.11.0.211.211.762.809.0.0.358.218.11.0.243.243.752.625.0.0.0" />
+           banner_key="11.25.128.4345.4345.780.802.1.0.0.427.101.0.438.438.767.854.0.0.359.503.101.0.211.211.762.809.0.0.358.218.101.0.243.243.752.625.0.0.0" />
   <Faction id="clan_khuzait_6"
            name="{=kbGk2so8}Baltait"
            tier="2"

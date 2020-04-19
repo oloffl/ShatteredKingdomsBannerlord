@@ -1,4 +1,5 @@
 ﻿using System;
+using ShatteredKingdoms.Behaviors;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Actions;
 using TaleWorlds.Core;
@@ -34,20 +35,39 @@ namespace ShatteredKingdoms
 		{
 			base.OnNewGameCreated(game, initializerObject);
 
+			ShatterKingdoms();
+		}
+
+		protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
+		{
+			if (!(game.GameType is Campaign))
+			{
+				return;
+			}
+
+			//Log.Info("OnGameStart");
+
+			CampaignGameStarter initializer = (CampaignGameStarter)gameStarterObject;
+
+			initializer.AddBehavior(new ShatterBehavior());
+		}
+
+		private void ShatterKingdoms()
+		{
 			try
 			{
 				foreach (Clan clan in Campaign.Current.Clans)
 				{
 					var isOnlyCastle = true;
-					for (int z = 0; z < clan.Fortifications.Count; z++)
+					foreach (Town town in clan.Fortifications)
 					{
-						if (clan.Fortifications[z].IsTown)
+						if (town.IsTown)
 						{
 							isOnlyCastle = false;
 						}
 					}
 
-					if (!isOnlyCastle &&!clan.Leader.Equals(clan.Kingdom.Leader)) 
+					if (!isOnlyCastle && !clan.Leader.Equals(clan.Kingdom.Leader))
 					{
 						foreach (Kingdom kingdom in Campaign.Current.Kingdoms)
 						{
@@ -69,20 +89,6 @@ namespace ShatteredKingdoms
 			{
 				Log.Info(e);
 			}
-		}
-
-		protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
-		{
-			if (!(game.GameType is Campaign))
-			{
-				return;
-			}
-
-			Log.Info("OnGameStart");
-
-			CampaignGameStarter initializer = (CampaignGameStarter) gameStarterObject;
-
-			initializer.AddBehavior(new ShatterBehavior());
 		}
 	}
 }
