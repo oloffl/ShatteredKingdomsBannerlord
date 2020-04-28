@@ -1,5 +1,4 @@
 ﻿using System;
-using ShatteredKingdoms.Behaviors;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Actions;
 using TaleWorlds.Core;
@@ -36,20 +35,6 @@ namespace ShatteredKingdoms
 			base.OnNewGameCreated(game, initializerObject);
 
 			ShatterKingdoms();
-		}
-
-		protected override void OnGameStart(Game game, IGameStarter gameStarterObject)
-		{
-			if (!(game.GameType is Campaign))
-			{
-				return;
-			}
-
-			//Log.Info("OnGameStart");
-
-			CampaignGameStarter initializer = (CampaignGameStarter)gameStarterObject;
-
-			initializer.AddBehavior(new ShatterBehavior());
 		}
 
 		private void ShatterKingdoms()

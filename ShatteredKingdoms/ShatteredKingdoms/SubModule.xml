@@ -1,7 +1,7 @@
 ﻿<Module>
   <Name value="Shattered Kingdoms" />
   <Id value="ShatteredKingdoms" />
-  <Version value="v1.0.2" />
+  <Version value="v1.3.0" />
   <SingleplayerModule value="true" />
   <MultiplayerModule value="false" />
   <Official value="false" />
